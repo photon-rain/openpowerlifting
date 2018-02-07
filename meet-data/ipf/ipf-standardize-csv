@@ -191,8 +191,14 @@ def meet_sex(csv):
 #See if we can determine whether this meet was single-ply
 def add_equipment(csv):
     equip_type = ''
+    
     #Check the field that usually has the meet name to see if it tells us
-    meet_info = csv.rows[1][0].split(',')
+    meet_info=[""]
+    for ii in range(0,3):
+        if len(csv.rows[ii])!= 0:
+            meet_info= csv.rows[ii][0].split('.')
+            if len(meet_info)>3: #Looks like we've found the meet info
+                break
     meet_name = meet_info[0]
 
     if 'open' in meet_name.lower() or 'equipped' in meet_name.lower():
@@ -206,7 +212,7 @@ def add_equipment(csv):
     if len(meet_info)>1:
         meet_year=meet_info[-1]
 
-    if meet_year < 2011:
+    if meet_year.isdigit() and int(meet_year) < 2011:
         equip_type='Single-ply'
 
 
