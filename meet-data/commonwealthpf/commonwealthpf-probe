@@ -14,7 +14,7 @@ import urllib.request
 
 
 FEDDIR = os.path.dirname(os.path.realpath(__file__))
-URL = "http://commonwealthpowerlifting.com/results.html"
+URLS = ["http://commonwealthpowerlifting.com/results.html","http://commonwealthpowerlifting.com/"]
 BASEURL = "http://commonwealthpowerlifting.com/"
 
 
@@ -47,6 +47,10 @@ def getmeetlist(html):
         if not 'http://' in url:
             url = BASEURL + url
 
+        #meet results will always be in a subdirectory
+        if url.strip('hhtp://').count('/')< 2:
+            continue
+
         if not url in urls:
             urls.append(url)
 
@@ -66,8 +70,9 @@ def getenteredurls():
 def main():
     meetlist = []
 
-    html = gethtml(URL)
-    meetlist = getmeetlist(html)
+    for url in URLS:
+        html = gethtml(url)
+        meetlist = getmeetlist(html)
 
     known = getenteredurls()
 
