@@ -140,7 +140,7 @@ def fixup_total(csv):
             row[totalidx]=''
 
         #There are some older IPF meets where despite a DQ the total is not blank
-        if row[placeidx] in ['DQ','DD','RD'] 
+        if row[placeidx] in ['DQ','DD','RD']: 
         	row[totalidx]=''
 
 
