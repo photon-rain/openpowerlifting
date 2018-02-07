@@ -116,6 +116,7 @@ KnownFederations = {
 KnownCountries = {
     "Argentina",
     "Australia",
+    "Austria",
     "Belarus",
     "Brazil",
     "Britain", # TODO: This is a placeholder until we have more data, probably.
@@ -123,6 +124,7 @@ KnownCountries = {
     "Cayman Islands",
     "Colombia",
     "Czechia",
+    "Czech Republic",
     "Denmark",
     "England",
     "Estonia",
@@ -130,6 +132,7 @@ KnownCountries = {
     "France",
     "Germany",
     "Greece",
+    "Hungary",
     "Iceland",
     "India",
     "Indonesia",
@@ -138,6 +141,7 @@ KnownCountries = {
     "Italy",
     "Japan",
     "Kazakhstan",
+    "Lithuania",
     "Luxembourg",
     "Malaysia",
     "Netherlands",
