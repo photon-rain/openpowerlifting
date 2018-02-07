@@ -47,6 +47,10 @@ def getmeetlist(html):
         if not 'http://' in url:
             url = BASEURL + url
 
+        #meet results will always be in a subdirectory
+        if url.strip('hhtp://').count('/')< 2:
+            continue
+
         if not url in urls:
             urls.append(url)
 
