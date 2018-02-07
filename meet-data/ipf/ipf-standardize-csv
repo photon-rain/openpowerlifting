@@ -195,7 +195,7 @@ def add_equipment(csv):
     meet_info = csv.rows[1][0].split(',')
     meet_name = meet_info[0]
 
-    if 'open' in meet_name.lower():
+    if 'open' in meet_name.lower() or 'equipped' in meet_name.lower():
         equip_type = 'Single-ply'
     elif 'classic' in meet_name.lower():
         equip_type='Raw'
