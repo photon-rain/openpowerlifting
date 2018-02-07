@@ -111,6 +111,7 @@ def fixup_lift(csv, fieldname):
 #In Bench meets doping disqualifications and bombs are marked in the total
 def fixup_total(csv): 
     totalidx = csv.index('TotalKg')
+    placeidx = csv.index('Place')
     for row in csv.rows:
         if row[totalidx] == 'DD':
             row[totalidx]=''
@@ -143,6 +144,7 @@ def unreverse_names(csv):
 
     for row in csv.rows:
         parts = row[nameidx].split()
+        parts = [name.title() for name in parts]
 
         # The last name is probably the given first name.
         fixed = [parts[-1]] + parts[:-1]
