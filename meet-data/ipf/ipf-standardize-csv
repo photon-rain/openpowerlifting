@@ -31,6 +31,19 @@ def assign_class(csv):
         elif curclass and row[totalidx]:
             row[wtclsidx] = curclass
 
+#Try and get the name of the meet from the csv file
+def get_meet_name(csv):
+    meet_info=[""]
+    for ii in range(0,3):
+        if len(csv.rows[ii])!= 0:
+            meet_info= csv.rows[ii][0].split('.')
+            if len(meet_info)>3: #Looks like we've found the meet info
+                break
+    if len(meet_info)!=0:
+    	return meet_info[0]
+
+    return ""
+
 
 def assign_division(csv):
     curdiv = None
@@ -38,19 +51,23 @@ def assign_division(csv):
     dividx = csv.index('Division')
 
 
-    #Check that a division label is given somewhere in this meet - if not it's an open meet.-note this isn't always true, see junior,sub-junior bench worlds 2010
-    for row in csv.rows:
+    for row in csv.rows[4:]: #Skip the title
         if row[0] == 'Open' or 'Sub' in row[0] or 'Juniors' in row[0] or 'Masters' in row[0]:
             break
 
-    if curdiv ==None:
-        curdiv = 'Open'
+    if curdiv ==None: #Try and work out the division of single division meets - note masters meets always have multiple divisions
+        if 'Open' in get_meet_name(csv):
+        	curdiv='Open'
+        elif 'Sub' in get_meet_name(csv):
+         	curdiv='Sub-Junior'
+        elif 'Junior' in get_meet_name(csv):
+         	curdiv='Junior'
 
     for row in csv.rows:
-        if row[0].startswith('Best Lifters') or row[0].startswith('List of'): # So we can correctly strip rows in Bench Only meets
+        if any(title in row[0].lower() for title in ['best lifters','list of','champion of']): # So we can correctly strip rows in Bench Only meets
             curdiv = 'NON-LIFTER-ROW'
-        elif row[0] == 'Open' or 'Sub' in row[0] or 'Juniors' in row[0] or 'Masters' in row[0]:
-            curdiv = row[0]
+        elif (row[0] == 'Open' or 'Sub' in row[0] or 'Juniors' in row[0] or 'Masters' in row[0]) and 'best' not in row[0].lower():
+            curdiv = row[0].replace('Women','').replace('Men','').strip()
         elif curdiv and row[totalidx]:
             row[dividx] = curdiv
 
@@ -196,7 +213,7 @@ def meet_sex(csv):
 def add_equipment(csv):
     equip_type = ''
     
-    #Check the field that usually has the meet name to see if it tells us
+    #Check the field that usually has the meet name to see if it tells us the equipment
     meet_info=[""]
     for ii in range(0,3):
         if len(csv.rows[ii])!= 0:
@@ -235,7 +252,9 @@ def standardize_full_meet(csv):
     fieldnames.append('Country')
     fieldnames.append('BodyweightKg')
     fieldnames.append('XXX_wilksfactor')
-    fieldnames.append('XXX_lot')
+
+    if len(csv.rows[0])==22: #Lot number is not always given
+        fieldnames.append('XXX_lot')
 
     fieldnames.append('Squat1Kg')
     fieldnames.append('Squat2Kg')
@@ -371,7 +390,7 @@ def main(filename):
         csv.rows = [x.strip().split(',') for x in fd.readlines()]
 
     
-    if len(csv.rows[0]) == 22: #Fieldnames given for the detailed spreadsheet.
+    if len(csv.rows[0]) in [21,22]: #Fieldnames given for the detailed spreadsheet.
         standardize_full_meet(csv)
     elif len(csv.rows[0]) in [13,14]: #Bench only
         standardize_bench_only(csv)  
