@@ -51,7 +51,8 @@ def assign_division(csv):
     dividx = csv.index('Division')
 
 
-    for row in csv.rows[4:]: #Skip the title
+    #Check that a division label is given somewhere in this meet - if not it's an open meet.-note this isn't always true, see junior,sub-junior bench worlds 2010
+    for row in csv.rows:
         if row[0] == 'Open' or 'Sub' in row[0] or 'Juniors' in row[0] or 'Masters' in row[0]:
             break
 
@@ -137,7 +138,7 @@ def fixup_total(csv):
             row[totalidx]=''
 
         #There are some older IPF meets where despite a DQ the total is not blank
-        if row[placeidx] in ['DQ','DD','RD']: 
+        if row[placeidx] in ['DQ','DD','RD'] 
         	row[totalidx]=''
 
 
