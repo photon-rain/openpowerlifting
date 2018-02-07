@@ -214,7 +214,7 @@ def meet_sex(csv):
 def add_equipment(csv):
     equip_type = ''
     
-    #Check the field that usually has the meet name to see if it tells us the equipment
+    #Check the field that usually has the meet name to see if it tells us
     meet_info=[""]
     for ii in range(0,3):
         if len(csv.rows[ii])!= 0:
