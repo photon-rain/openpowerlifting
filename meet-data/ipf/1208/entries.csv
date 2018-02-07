@@ -1,4 +1,4 @@
-Place,Name,BirthYear,Country,BodyweightKg,Squat1Kg,Squat2Kg,Squat3Kg,BestSquatKg,Bench1Kg,Bench2Kg,Bench3Kg,BestBenchKg,Deadlift1Kg,Deadlift2Kg,Deadlift3Kg,BestDeadliftKg,TotalKg,WeightClassKg,Division,Event,Sex,Equipment
+﻿Place,Name,BirthYear,Country,BodyweightKg,Squat1Kg,Squat2Kg,Squat3Kg,BestSquatKg,Bench1Kg,Bench2Kg,Bench3Kg,BestBenchKg,Deadlift1Kg,Deadlift2Kg,Deadlift3Kg,BestDeadliftKg,TotalKg,WeightClassKg,Division,Event,Sex,Equipment
 1,Eric Kupperstein,1966,USA,58.96,205,-225,230,230,115,122.5,127.5,127.5,227.5,245.5,255,255,612.5,59,Masters 1,SBD,M,Single-ply
 1,Dominic Cadden,1970,AUS,65.52,217.5,-227.5,227.5,227.5,-165,-165,165,165,220,227.5,-230,227.5,620,66,Masters 1,SBD,M,Single-ply
 2,Jacob Carrasco-Gonsales,1966,PER,65.84,210,220,225,225,-140,140,145,145,220,235,-237.5,235,605,66,Masters 1,SBD,M,Single-ply
