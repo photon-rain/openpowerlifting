@@ -1,4 +1,4 @@
-Place,Name,BirthYear,Country,BodyweightKg,Squat1Kg,Squat2Kg,Squat3Kg,BestSquatKg,Bench1Kg,Bench2Kg,Bench3Kg,BestBenchKg,Deadlift1Kg,Deadlift2Kg,Deadlift3Kg,BestDeadliftKg,TotalKg,WeightClassKg,Division,Event,Sex,Equipment
+﻿Place,Name,BirthYear,Country,BodyweightKg,Squat1Kg,Squat2Kg,Squat3Kg,BestSquatKg,Bench1Kg,Bench2Kg,Bench3Kg,BestBenchKg,Deadlift1Kg,Deadlift2Kg,Deadlift3Kg,BestDeadliftKg,TotalKg,WeightClassKg,Division,Event,Sex,Equipment
 1,Dariusz Wszola,1978,POL,55.6,235,245,-250,245.0,-155,155,165,165.0,195,205,-207.5,205.0,615,56,Open,SBD,M,Single-ply
 2,Hiroyuki Isagawa,1953,JPN,55.82,207.5,-215,215,215.0,172.5,-177.5,-177.5,172.5,-215,225,-230,225.0,612.5,56,Open,SBD,M,Single-ply
 3,Pawel Osmialowski,1977,POL,55.86,225,235,-242.5,235.0,115,-125,125,125.0,202.5,212.5,215,215.0,575,56,Open,SBD,M,Single-ply
