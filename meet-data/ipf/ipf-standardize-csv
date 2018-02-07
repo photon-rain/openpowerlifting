@@ -54,8 +54,7 @@ def assign_division(csv):
     dividx = csv.index('Division')
 
 
-    #Check that a division label is given somewhere in this meet - if not it's an open meet.-note this isn't always true, see junior,sub-junior bench worlds 2010
-    for row in csv.rows:
+    for row in csv.rows[4:]: #Skip the title
         if row[0] == 'Open' or 'Sub' in row[0] or 'Juniors' in row[0] or 'Masters' in row[0]:
             break
 
@@ -70,7 +69,7 @@ def assign_division(csv):
     for row in csv.rows:
         if any(title in row[0].lower() for title in ['best lifters','list of','champion of']): # So we can correctly strip rows in Bench Only meets
             curdiv = 'NON-LIFTER-ROW'
-        elif row[0] == 'Open' or 'Sub' in row[0] or 'Juniors' in row[0] or 'Masters' in row[0]:# and 'best' not in row[0].lower():
+        elif (row[0] == 'Open' or 'Sub' in row[0] or 'Juniors' in row[0] or 'Masters' in row[0]) and 'best' not in row[0].lower():
             curdiv = row[0].replace('Women','').replace('Men','').strip()
         elif curdiv and row[totalidx]:
             row[dividx] = curdiv
@@ -215,7 +214,7 @@ def meet_sex(csv):
 def add_equipment(csv):
     equip_type = ''
     
-    #Check the field that usually has the meet name to see if it tells us
+    #Check the field that usually has the meet name to see if it tells us the equipment
     meet_info=[""]
     for ii in range(0,3):
         if len(csv.rows[ii])!= 0:

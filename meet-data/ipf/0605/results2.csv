@@ -15,12 +15,12 @@ PL.,Lifters,BY,Nation,Weight,WF,Lot,All Squat,,,,All Bench press,,,,All Dead lif
 3,Ochoa Vilma,1980,ECU,48,1.3244,6,152.5,160,165,2,-77.5,77.5,-82.5,4,162.5,170,177.5,2,420,556.24,8
 4,Le Panse Benedicte,1978,FRA,47.65,1.3316,19,140,150,160,4,90,95,97.5,2,140,150,-157.5,6,407.5,542.6,7
 5,Guillaume Sabine,1963,FRA,47.3,1.3387,11,125,130,-135,5,65,67.5,-70,7,145,155,-157.5,4,352.5,471.89,6
-6,Lee Chia-Yu,1987,TPE,45.55,1.3752,0,105,115,,8,70,-75,-75,5,155,165,-170,3,350,481.3,5
+6,Lee Chia-Yu,1987,TPE,45.55,1.3752,0,105,115,,,,8,70,-75,-75,5,155,165,-170,3,350,481.3,5
 7,Lindstrom Carola,1982,SWE,47.7,1.3305,13,120,130,-140,6,65,-70,-70,8,130,140,145,7,340,452.37,4
 8,Kitamura Junko,1963,RSA,47.7,1.3305,4,115,125,-130,7,75,80,-82.5,3,115,120,125,9,330,439.06,3
 9,Ocampo Jonna,1969,USA,46.7,1.3511,22,107.5,115,-120,9,55,-62.5,-62.5,9,115,125,-132.5,8,295,398.57,2
 10,Tanaka Shoko,1964,JPN,47.75,1.3295,9,90,-95,-95,10,50,55,-57.5,10,-95,95,-102.5,10,240,319.08,1
-DQ,Apuli Sanna,1981,FIN,47.4,1.3367,23,-140,-140,-140,Disq.,-70,-70,-70,Disq.,-145,,,Disq.,Out,DQ,DQ
+DQ,Apuli Sanna,1981,FIN,47.4,1.3367,23,-140,-140,-140,Disq.,-70,-70,-70,Disq.,-145,,,,,,,Disq.,Out,DQ,DQ
 - 52 kg,,,,,,,,,,,,,,,,,,,,,
 1,Chou Yi Ju,1980,TPE,49.75,1.2895,20,150,-160,165,1,75,80,85,6,170,180,185,1,435,560.93,12
 2,Sirkia Mervi,1972,FIN,51.75,1.2513,10,160,-165,-165,2,90,92.5,-95,5,155,-167.5,-167.5,4,407.5,509.9,9
@@ -54,7 +54,7 @@ DQ,Kehanen Virpi,1979,FIN,55.65,1.1824,14,180,187.5,-192.5,2,-80,-80,-80,Disq.,1
 9,Terada Yukie,1974,JPN,59.4,1.1236,33,135,-147.5,-147.5,10,-95,-95,95,6,140,155,-160,11,385,432.58,2
 10,Cruz Michelle,1982,PHI,59.85,1.1171,28,-135,-135,135,11,-75,75,-85,10,130,142.5,-147.5,12,352.5,393.76,1
 11,Langva Anett,1979,NOR,57.25,1.1564,3,125,130,-132.5,12,-85,85,-90,8,65,-125,-125,13,280,323.79,1
-DQ,Liimatainen Riitta,1963,SWE,57.6,1.1509,2,-167.5,-167.5,-167.5,Disq.,50,,,12,165,180,185,6,Out,DQ,DQ
+DQ,Liimatainen Riitta,1963,SWE,57.6,1.1509,2,-167.5,-167.5,-167.5,Disq.,50,,,,,,,12,165,180,185,6,Out,DQ,DQ
 DQ,Amaya Annymaryuth,1980,VEN,59.6,1.1207,20,175,190,195,1,-95,-95,-95,Disq.,175,190,200,1,Out,DQ,DQ
 DQ,Naidu Tejeswani,1979,IND,57.4,1.1541,9,165,-175,-175,Disq.,90,-95,-95,Disq.,175,-180,-182.5,Disq.,DD,DQ,DQ
 DQ,Malyugina Nadejda,1979,UZB,59.95,1.1156,7,180,200,205,Disq.,105,-115,115,Disq.,185,200,210,Disq.,DD,DQ,DQ
@@ -141,7 +141,7 @@ PL.,Lifter,Nation,,B.Weight,,WF,,Total,,W. points,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,
 Abbreviations:,,,,,,,,,,,,,,,,,,,,,
 nb - New pers. bestlifts; n - National Record; c - Continental Record; w - World Record; cp - Competition's Record;,,,,,,,,,,,,,,,,,,,,,
-1..4 - Master's Record; j - Junior's Record; s - Subjunior's Record; ps. - Personally;  - the refused attempt.,,,,,,,,,,,,,,,,,,,,,
+1..4 - Master's Record; j - Junior's Record; s - Subjunior's Record; ps. - Personally; ,, - the refused attempt.,,,,,,,,,,,,,,,,,,,,,
 Out - Disqualification; DR - Removed by a Doctor; TD - Technical Disqualification; DD - Doping Disqualification.,,,,,,,,,,,,,,,,,,,,,
 AUT = Austria,,,HKG = Hong Kong,,,,,POL = Poland,,,,,,,,,,,,,
 CAN = Canada,,,IND = India,,,,,RSA = South Africa,,,,,,,,,,,,,
