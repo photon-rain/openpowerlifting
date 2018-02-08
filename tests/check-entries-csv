@@ -607,6 +607,18 @@ def check_row_lift_consistency(row, csv, bestcol, attemptcols):
                (row[csv.index('Name')], bestcol, str(best), row[csv.index(bestcol)]))
 
 
+def check_row_lift_order(row, csv, attemptcols):
+    attempts = []
+    for col in attemptcols:
+        attempt = abs(float2(row[csv.index(col)])) if col in csv.fieldnames else 0.0
+        if attempt != 0.0:
+       		attempts.append(attempt)
+
+    if not (attempts == sorted(attempts)):
+     	pwarning("Attempts for \"%s\" in columns %s are not in ascending order" %
+            (row[csv.index('Name')],  ' '.join(str(x) for x in attempts)))
+
+
 
 def check_row_total_consistency(row, csv):
     if not 'TotalKg' in csv.fieldnames:
@@ -694,6 +706,7 @@ def check_row(row, csv):
     check_row_lift_consistency(row, csv, 'BestDeadliftKg',
                                           ['Deadlift1Kg','Deadlift2Kg','Deadlift3Kg'])
 
+<<<<<<< ae2a2cea9a4c50200644e55d0b9df2a32a17eb30
     check_row_lift_order(row, csv,['Squat1Kg','Squat2Kg','Squat3Kg','Squat4Kg'])
     check_row_lift_order(row, csv,['Bench1Kg','Bench2Kg','Bench3Kg','Bench4Kg'])
     check_row_lift_order(row, csv,['Deadlift1Kg','Deadlift2Kg','Deadlift3Kg','Deadlift4Kg'])
@@ -701,6 +714,12 @@ def check_row(row, csv):
     check_row_success_consistency(row, csv,['Squat1Kg','Squat2Kg','Squat3Kg','Squat4Kg'])
     check_row_success_consistency(row, csv,['Bench1Kg','Bench2Kg','Bench3Kg','Bench4Kg'])
     check_row_success_consistency(row, csv,['Deadlift1Kg','Deadlift2Kg','Deadlift3Kg','Deadlift4Kg'])
+=======
+
+    check_row_lift_order(row, csv,['Squat1Kg','Squat2Kg','Squat3Kg'])
+    check_row_lift_order(row, csv,['Bench1Kg','Bench2Kg','Bench3Kg'])
+    check_row_lift_order(row, csv,['Deadlift1Kg','Deadlift2Kg','Deadlift3Kg'])
+>>>>>>> Added javascript based meet results
 
     # Check individual cell values in isolation.
     for i, text in enumerate(row):
