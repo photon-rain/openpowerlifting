@@ -458,6 +458,23 @@ def check_row_event_consistency(row, csv):
             perror("DQ'd lifter must not have a TotalKg. Row: %s" % row)
 
 
+#Checks that lifter sex matches lifter weight class
+def check_row_weightclass_sex(row,csv):
+    if not 'Sex' in csv.fieldnames or not 'WeightClassKg' in csv.fieldnames:
+        return
+    ipf_mens_classes = ['53','59','66','74','83','93','105','120','120+']
+    ipf_womens_classes = ['43','47','57','63','72','84','84+'] #Don't have -52 as this overlaps with a traditional class
+
+    trad_mens_only = ['100','110','125','125+']
+    trad_womens_only = ['44','48','90+']
+
+    if row[csv.index('Sex')] is 'M' and row[csv.index('WeightClassKg')] in ipf_womens_classes+trad_womens_only:
+            pwarning("Male lifter in female weight-class: %s %s kg" % (row[csv.index('Name')],row[csv.index('WeightClassKg')]))
+    #Not checking the traditional classes right now due to SPF,USPA etc
+    elif row[csv.index('Sex')] is 'F' and row[csv.index('WeightClassKg')] in ipf_mens_classes: 
+            pwarning("Female lifter in male weight-class: %s %s kg" % (row[csv.index('Name')],row[csv.index('WeightClassKg')]))
+
+
 # Women shouldn't accidentally be given male SHW classes.
 # Bodyweight should match the weight class.
 def check_row_weightclass_consistency(row, csv):
@@ -538,6 +555,18 @@ def check_row_lift_consistency(row, csv, bestcol, attemptcols):
                (row[csv.index('Name')], bestcol, str(best), row[csv.index(bestcol)]))
 
 
+def check_row_lift_order(row, csv, attemptcols):
+    attempts = []
+    for col in attemptcols:
+        attempt = abs(float2(row[csv.index(col)])) if col in csv.fieldnames else 0.0
+        if attempt != 0.0:
+       		attempts.append(attempt)
+
+    if not (attempts == sorted(attempts)):
+     	pwarning("Attempts for \"%s\" in columns %s are not in ascending order" %
+            (row[csv.index('Name')],  ' '.join(str(x) for x in attempts)))
+
+
 
 def check_row_total_consistency(row, csv):
     if not 'TotalKg' in csv.fieldnames:
@@ -616,6 +645,7 @@ def check_row(row, csv):
     check_row_name_consistency(row, csv)
     check_row_event_consistency(row, csv)
     check_row_weightclass_consistency(row, csv)
+    check_row_weightclass_sex(row,csv)
     check_row_total_consistency(row, csv)
     check_row_wilks_consistency(row, csv)
 
@@ -623,6 +653,11 @@ def check_row(row, csv):
     check_row_lift_consistency(row, csv, 'BestBenchKg', ['Bench1Kg','Bench2Kg','Bench3Kg'])
     check_row_lift_consistency(row, csv, 'BestDeadliftKg',
                                           ['Deadlift1Kg','Deadlift2Kg','Deadlift3Kg'])
+
+
+    check_row_lift_order(row, csv,['Squat1Kg','Squat2Kg','Squat3Kg'])
+    check_row_lift_order(row, csv,['Bench1Kg','Bench2Kg','Bench3Kg'])
+    check_row_lift_order(row, csv,['Deadlift1Kg','Deadlift2Kg','Deadlift3Kg'])
 
     # Check individual cell values in isolation.
     for i, text in enumerate(row):
