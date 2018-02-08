@@ -1,6 +1,10 @@
 Federation,Date,MeetCountry,MeetState,MeetTown,MeetName
+<<<<<<< 6aeeb75f9d4aadd1ca58b03ed888c91ee8b38b4f
 <<<<<<< b7bb3aeb302cf07e47c0bfd0ba81fe41895df059
 IPF,2009-09-28,Czech Republic,,Ostrava,27th World Masters Championships
 =======
 IPF,2009-09-28,Czech Republic,, Ostrava,27th World Masters Championships
 >>>>>>> Added 2007,2008 meets
+=======
+IPF,2009-09-28,Czech Republic,,Ostrava,27th World Masters Championships
+>>>>>>> Files now pass make check
