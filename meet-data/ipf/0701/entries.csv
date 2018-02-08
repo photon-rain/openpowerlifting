@@ -27,7 +27,7 @@ DQ,Fermin Romero,1966,ESP,81.2,-200,-207.5,-207.5,,,82.5,Masters 1,B,M,Single-pl
 DQ,Erik Rasmussen,1962,DEN,82,-185,-185,-185,,,82.5,Masters 1,B,M,Single-ply
 1,Klaus-Dieter Jacob,1961,GER,88.4,212.5,215,-222.5,215,215,90,Masters 1,B,M,Single-ply
 2,Takeshi Kitagawa,1958,JPN,89.3,215,-222.5,-225,215,215,90,Masters 1,B,M,Single-ply
-3,Patrick Leblevennec,1963,FRA,88.7,212.5,-217.5,-217.5,212.5,212.5,90,Masters 1,B,M,Single-ply
+3,Patrick Le Blevennec,1963,FRA,88.7,212.5,-217.5,-217.5,212.5,212.5,90,Masters 1,B,M,Single-ply
 4,Roger Pohl,1962,GER,90,-210,210,-215,210,210,90,Masters 1,B,M,Single-ply
 5,Miroslav Paukert,1963,CZE,89.6,200,205,-210,205,205,90,Masters 1,B,M,Single-ply
 6,Didier Compain,1959,FRA,88.8,200,-215,-215,200,200,90,Masters 1,B,M,Single-ply
@@ -70,10 +70,6 @@ DQ,Collin Rhodes,1967,USA,124.7,-272.5,-272.5,-275,,,125,Masters 1,B,M,Single-pl
 3,Ryszard Wisniewski,1959,POL,137.4,220,235,-257.5,235,235,125+,Masters 1,B,M,Single-ply
 4,Karl-Johan Renlund,1966,FIN,157.1,220,-232.5,-237.5,220,220,125+,Masters 1,B,M,Single-ply
 DQ,Wulf Kronemann,1967,GER,137.9,-317.5,-317.5,-317.5,,,125+,Masters 1,B,M,Single-ply
-PL.,Lifter,Nation,,B.Weight,,Result,,,,125+,Masters 1,B,M,Single-ply
-1,Anton Kraft,Denmark,,57.3,,182.5,,182.5,162.49,125+,Masters 1,B,M,Single-ply
-2,David Doan,U.S.America,,108.4,,272.5,,272.5,161.1,125+,Masters 1,B,M,Single-ply
-3,Kristof Bozycko,Poland,,107.2,,270,,270,160.19,125+,Masters 1,B,M,Single-ply
 1,Carmelo Virzi,1957,GER,54.8,95,-97.5,97.5,97.5,97.5,56,Masters 2,B,M,Single-ply
 2,Leszek Wasniowski,1957,POL,55.1,-90,90,-100,90,90,56,Masters 2,B,M,Single-ply
 1,Joachim Lietzau,1950,GER,59.5,-130,130,137.5,137.5,137.5,60,Masters 2,B,M,Single-ply
@@ -148,10 +144,6 @@ DQ,Truls Nygaard,1956,NOR,119.7,-230,-230,-240,,,125,Masters 2,B,M,Single-ply
 4,Petr Macak,1950,CZE,171.6,-225,225,-235,225,225,125+,Masters 2,B,M,Single-ply
 5,Tuomo Lollo,1953,FIN,127.8,210,222.5,-230,222.5,222.5,125+,Masters 2,B,M,Single-ply
 6,Walter Braun,1951,GER,126,200,210,-215,210,210,125+,Masters 2,B,M,Single-ply
-PL.,Lifter,Nation,,B.Weight,,Result,,,,125+,Masters 2,B,M,Single-ply
-1,Bradley Klinger,U.S.America,,118.4,,276,,276,159.19,125+,Masters 2,B,M,Single-ply
-2,Fred Jahnke,Germany,,108,,252.5,,252.5,149.45,125+,Masters 2,B,M,Single-ply
-3,Mike Bridges,U.S.America,,89.8,,230,,230,146.99,125+,Masters 2,B,M,Single-ply
 1,Pierre Gallart,1944,FRA,55.4,110,117.5,122.5,122.5,122.5,56,Masters 3,B,M,Single-ply
 2,Katsuhiko Imba,1947,JPN,55.1,85,-95,-95,85,85,56,Masters 3,B,M,Single-ply
 1,Teruo Shiraida,1943,JPN,59.5,127.5,-139,-139,127.5,127.5,60,Masters 3,B,M,Single-ply
@@ -173,12 +165,12 @@ DQ,Ludwig Pfaus,1942,GER,66.8,-122.5,-122.5,-122.5,,,67.5,Masters 3,B,M,Single-p
 4,Hideo Kumakura,1936,JPN,78.4,137.5,-145,-145,137.5,137.5,82.5,Masters 3,B,M,Single-ply
 5,Karel Olic,1947,CZE,78.4,125,130,135,135,135,82.5,Masters 3,B,M,Single-ply
 6,Mike Edwards,1945,GBR,82,120,122.5,-125,122.5,122.5,82.5,Masters 3,B,M,Single-ply
-DQ,Werner Pasternak,1942,GER,79.6,-140,,#,,,82.5,Masters 3,B,M,Single-ply
+DQ,Werner Pasternak,1942,GER,79.6,-140,,,,,82.5,Masters 3,B,M,Single-ply
 1,Bill Lindsey,1946,USA,88,162.5,170,177.5,177.5,177.5,90,Masters 3,B,M,Single-ply
 2,Matti Silvander,1944,FIN,89.1,177.5,-182.5,-182.5,177.5,177.5,90,Masters 3,B,M,Single-ply
 3,Katsuji Kawabe,1942,JPN,89.1,170,-177.5,177.5,177.5,177.5,90,Masters 3,B,M,Single-ply
 4,Bill Phillips,1938,USA,88.6,175,-180,-182.5,175,175,90,Masters 3,B,M,Single-ply
-5,William Mcfadyen,1934,GBR,84.6,165,172.5,-182.5,172.5,172.5,90,Masters 3,B,M,Single-ply
+5,William McFadyen,1934,GBR,84.6,165,172.5,-182.5,172.5,172.5,90,Masters 3,B,M,Single-ply
 6,Gerd Fell,1938,GER,88.6,155,160,162.5,162.5,162.5,90,Masters 3,B,M,Single-ply
 7,Norman Anderson,1934,GBR,89.7,140,145,150,150,150,90,Masters 3,B,M,Single-ply
 DQ,Yucel Demirel,1947,GER,88.3,-182.5,-182.5,-182.5,,,90,Masters 3,B,M,Single-ply
@@ -198,10 +190,6 @@ DQ,Terry White,1941,USA,91.3,-167.5,-170,-170,,,100,Masters 3,B,M,Single-ply
 3,Peter Rumbler,1939,GER,114,165,175,180,180,180,125,Masters 3,B,M,Single-ply
 1,Mauno Kontto,1941,FIN,125.8,160,170,185,185,185,125+,Masters 3,B,M,Single-ply
 2,Georg Bostrom,1947,SWE,125.1,90,105,,105,105,125+,Masters 3,B,M,Single-ply
-PL.,Lifter,Nation,,B.Weight,,Result,,,,125+,Masters 3,B,M,Single-ply
-1,Niilo Maliniemi,Sweden,,116.9,,240,,240,136.46,125+,Masters 3,B,M,Single-ply
-2,Toru Magome,Japan,,67.4,,166,,166,128.13,125+,Masters 3,B,M,Single-ply
-3,Christer Nylund,Finland,,117.8,,210,,210,121.27,125+,Masters 3,B,M,Single-ply
 1,Marion Friedrich,1965,GER,46.3,90,95,-101,95,95,48,Masters 1,B,F,Single-ply
 1,Gabriela Hirner,1965,GER,51.7,-102.5,102.5,105,105,105,52,Masters 1,B,F,Single-ply
 2,Akemi Masuyama,1962,JPN,51,75,80,87.5,87.5,87.5,52,Masters 1,B,F,Single-ply
@@ -258,7 +246,7 @@ DQ,Francoise Heligon,1943,FRA,49.7,-60,-60,-60,,,52,Masters 2,B,F,Single-ply
 3,Anita Thimm,1950,GER,64.3,75,80,-87.5,80,80,67.5,Masters 2,B,F,Single-ply
 4,Kumiko Nakazawa,1948,JPN,64.3,62.5,65,-67.5,65,65,67.5,Masters 2,B,F,Single-ply
 5,Erika Wimmer,1940,GER,65.9,55,57.5,60,60,60,67.5,Masters 2,B,F,Single-ply
-DQ,Francoise Calves,1956,FRA,60.2,-65,-65,-65,,,67.5,Masters 2,B,F,Single-ply
+DQ,Françoise Calves,1956,FRA,60.2,-65,-65,-65,,,67.5,Masters 2,B,F,Single-ply
 1,Mariet Spronk,1955,NED,71.6,95,100,102.5,102.5,102.5,75,Masters 2,B,F,Single-ply
 2,Michelle Sora,1956,USA,74.7,92.5,97.5,-102.5,97.5,97.5,75,Masters 2,B,F,Single-ply
 3,Anke Beninga,1954,GER,72.9,80,85,87.5,87.5,87.5,75,Masters 2,B,F,Single-ply
