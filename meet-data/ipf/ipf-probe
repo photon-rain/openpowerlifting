@@ -10,8 +10,9 @@
 from bs4 import BeautifulSoup
 import colorama
 import sys,os
-from os.path import join,realpath,dirname
-sys.path.append(join(dirname(dirname(dirname(realpath(__file__)))),"scripts"))
+from pathlib import Path
+
+sys.path.append(os.path.join(Path((os.path.realpath(__file__))).parents[2] ,"scripts"))
 
 import oplcsv
 import wilks
