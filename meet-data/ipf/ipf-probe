@@ -8,11 +8,14 @@
 
 
 from bs4 import BeautifulSoup
-import os
-import sys
+import colorama
+import sys,os
+from pathlib import Path
 
-sys.path.append('../../scripts')
-sys.path.append('scripts')
+sys.path.append(os.path.join(Path((os.path.realpath(__file__))).parents[2] ,"scripts"))
+
+import oplcsv
+import wilks
 import oplprobe
 
 
@@ -79,6 +82,7 @@ def getmeetlist(html):
 
 
 def main():
+    colorama.init()
     meetlist = []
     for url in URLS:
         html = oplprobe.gethtml(url)
@@ -88,7 +92,7 @@ def main():
     unentered = oplprobe.getunenteredurls(meetlist, entered)
 
     oplprobe.print_meets(color('[IPF]'), unentered)
-
+    colorama.deinit()
 
 if __name__ == '__main__':
     main()
