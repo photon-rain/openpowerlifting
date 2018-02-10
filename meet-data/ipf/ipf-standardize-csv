@@ -5,8 +5,11 @@
 # internal format.
 #
 
-import sys
-from oplcsv import Csv
+import sys,os
+from pathlib import Path
+sys.path.append(os.path.join(Path((os.path.realpath(__file__))).parents[2] ,"scripts"))
+
+import oplcsv
 import shutil
 
 def error(msg):
