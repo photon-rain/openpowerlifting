@@ -33,7 +33,7 @@ entries=("${entries[@]/#/entries}")
 #Only merge entry files if they have all processed correctly
 if [ ${n} -gt 1 ] && [ "$process_success" == true ];then
 	${REPOSCRIPTDIR}/csv-cat ${entries[@]} > entries.csv
-#	rm ${entries[@]}
+	rm ${entries[@]}
 fi
 
 
