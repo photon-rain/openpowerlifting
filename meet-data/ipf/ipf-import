@@ -61,7 +61,7 @@ do
 	sed -i -e 's/,X,/,,/g' "results"${r_nums[$((ii-2))]}".csv"
 
 	# Skips are sometimes denotes as "#"
-	sed -i -e 's/#/,,/g' "results"${r_nums[$((ii-2))]}".csv"
+	sed -i -e 's/#//g' "results"${r_nums[$((ii-2))]}".csv"
 
 	# Birth year sometimes has a question mark
 	sed -i -e 's/,?,/,,/g' "results"${r_nums[$((ii-2))]}".csv"
