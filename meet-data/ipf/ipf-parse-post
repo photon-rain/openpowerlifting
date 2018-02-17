@@ -12,7 +12,7 @@ n=`ls  | grep 'results.*\.csv' | wc -l`
 
 r_nums=($(seq 1 1 ${n}))
 if [ ${n} == 1 ];then #Result files are only numbered if there is more than one
-	r_nums[0]=''
+ 	r_nums[0]=''
 fi
 
 process_success=true
@@ -21,8 +21,8 @@ do
 	${SCRIPTDIR}/ipf-standardize-csv "results"${r_nums[$((ii-1))]}".csv" > "entries"${r_nums[$((ii-1))]}".csv"
 	#Check if ipf-standardize-csv was able to deal with this file
 	if cmp -s "results"${r_nums[$((ii-1))]}".csv" "entries"${r_nums[$((ii-1))]}".csv" ; then
-		echo "Error: ipf-standardize-csv does not know how to handle this format. Leaving entries"${r_nums[$((ii-1))]}".csv unstandardized."
-		process_success=false
+ 		echo "Error: ipf-standardize-csv does not know how to handle this format. Leaving entries"${r_nums[$((ii-1))]}".csv unstandardized."
+ 		process_success=false
 	fi
 done
 
@@ -33,7 +33,7 @@ entries=("${entries[@]/#/entries}")
 #Only merge entry files if they have all processed correctly
 if [ ${n} -gt 1 ] && [ "$process_success" == true ];then
 	${REPOSCRIPTDIR}/csv-cat ${entries[@]} > entries.csv
-	rm ${entries[@]}
+ 	rm ${entries[@]}
 fi
 
 
