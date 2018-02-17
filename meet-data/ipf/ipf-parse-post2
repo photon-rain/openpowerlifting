@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+
+set -e
+
+SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+REPOSCRIPTDIR="${SCRIPTDIR}/../../scripts"
+REPOTESTDIR="${SCRIPTDIR}/../../tests"
+
+#${SCRIPTDIR}/ipf-standardize-csv2 "results"${r_nums[$((ii-1))]}".csv" > "entries"${r_nums[$((ii-1))]}".csv"
+
+cp ${SCRIPTDIR}/../meet.template meet.csv
+
