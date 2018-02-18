@@ -21,7 +21,7 @@ Place,WeightClassKg,Sex,Division,Name,BirthYear,BodyweightKg,Country,BestSquatKg
 6,60,M,Open,Gerard Tromp,1959,59.9,Holland,252.5,,142.5,222.5,617.5,SBD,Single-ply
 7,60,M,Open,Vladimir Morozovs,1968,60,Latvia,225,,130,235,590,SBD,Single-ply
 8,60,M,Open,Leandro Maccari,1979,59.66,Brazil,185,,105,180,470,SBD,Single-ply
-DQ.,60,M,Open,Ivelin Petrov,1969,59.6,Bulgaria,,,,,,SBD,Single-ply
+DQ,60,M,Open,Ivelin Petrov,1969,59.6,Bulgaria,,,,,,SBD,Single-ply
 1,67.5,M,Open,Alexei Sivokon,1973,67.3,Kazahkstan,305,316.5,195,300,800,SBD,Single-ply
 2,67.5,M,Open,Wade Hooper,1970,67.1,US.America,305,,190,245,740,SBD,Single-ply
 3,67.5,M,Open,Jaroslaw Olech,1974,66.9,Poland,290,,157.5,270,717.5,SBD,Single-ply
@@ -99,7 +99,7 @@ DQ,90,M,Open,Ray Benemerito,1967,88.9,US.America,315,,200,,,SBD,Single-ply
 16,100,M,Open,Ricardo Pereira,1972,90.8,Portugal,260,,140,290,690,SBD,Single-ply
 17,100,M,Open,Tarun Kumar,1973,95.2,India,280,,120,270,670,SBD,Single-ply
 18,100,M,Open,Patrick Phelan,1975,99,Ireland,170,,132.5,265,567.5,SBD,Single-ply
-DQ,100,M,Open,Dominik Tanpinard,19..,96.77,Germany,,,,,,SBD,Single-ply
+DQ,100,M,Open,Dominik Tanpinard,,96.77,Germany,,,,,,SBD,Single-ply
 DQ,100,M,Open,Paulo Tritto,1968,97.7,Brazil,,,,,,SBD,Single-ply
 DQ,100,M,Open,Aleksand Guberniy,1964,98,Belorussia,270,,,,,SBD,Single-ply
 1,110,M,Open,Alexey Gankov,1970,108.5,Russia,375,,245,382.5,1002.5,SBD,Single-ply
@@ -119,7 +119,7 @@ DQ,100,M,Open,Aleksand Guberniy,1964,98,Belorussia,270,,,,,SBD,Single-ply
 15,110,M,Open,Michael Pikos,1975,108,Australia,270,,185,290,745,SBD,Single-ply
 16,110,M,Open,Parvers Khanna,1967,100.8,India,250,,190,235,675,SBD,Single-ply
 DQ,110,M,Open,Vital Baranowskiy,1977,108.1,Belorussia,270,,,,,SBD,Single-ply
-DQ,110,M,Open,Willy Croner,19..,108.5,US.America,,,,,,SBD,Single-ply
+DQ,110,M,Open,Willy Croner,,108.5,US.America,,,,,,SBD,Single-ply
 DQ,110,M,Open,Clive Henry,1966,109.4,G. Brtain,380,,,,,SBD,Single-ply
 DQ,110,M,Open,Derek Pomana,1966,109.7,New Zealand,,,,,,SBD,Single-ply
 DQ,110,M,Open,Huai-Chin Liang,1967,109.8,Chin.Taipei,355,,,,,SBD,Single-ply

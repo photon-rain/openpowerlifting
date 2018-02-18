@@ -20,8 +20,8 @@ Place,WeightClassKg,Name,BirthYear,BodyweightKg,Country,BestSquatKg,BestBenchKg,
 9,48,Hanna Svahn,1963,47.9,Denmark,72.5,85,75,232.5,SBD,Single-ply,Open,F
 1,52,Suzanne Hartwig,1968,51.1,US.America,165,97.5,167.5,430,SBD,Single-ply,Open,F
 2,52,Stephani Cornette,1975,51.8,France,177.5,87.5,162.5,427.5,SBD,Single-ply,Open,F
-3,52,Mervi Rantam‰ki,1974,52,Finland,165,87.5,167.5,420,SBD,Single-ply,Open,F
-4,52,Mervi Sirki‰,1972,51.4,Finland,147.5,95,172.5,415,SBD,Single-ply,Open,F
+3,52,Mervi Rantam√§ki,1974,52,Finland,165,87.5,167.5,420,SBD,Single-ply,Open,F
+4,52,Mervi Sirki√§,1972,51.4,Finland,147.5,95,172.5,415,SBD,Single-ply,Open,F
 5,52,Teresa Sawyer,1963,51.4,Great Britain,147.5,85,145,377.5,SBD,Single-ply,Open,F
 1,56,Inna Filimonova,1976,55.8,Russia,222.5,107.5,195,525,SBD,Single-ply,Open,F
 2,56,Birgit Fischer,1963,55.4,Germany,167.5,85,197.5,450,SBD,Single-ply,Open,F
@@ -34,12 +34,12 @@ Place,WeightClassKg,Name,BirthYear,BodyweightKg,Country,BestSquatKg,BestBenchKg,
 9,56,Agniesz Leszynska,1980,55.3,Poland,155,57.5,147.5,360,SBD,Single-ply,Open,F
 10,56,Dagmar Wang,1948,53.8,Austria,130,82.5,145,357.5,SBD,Single-ply,Open,F
 11,56,Maria Szymkowiak,1961,55.6,Poland,142.5,72.5,135,350,SBD,Single-ply,Open,F
-12,56,K‰te Vestergaard,1972,53.8,Denmark,115,67.5,132.5,315,SBD,Single-ply,Open,F
+12,56,K√§te Vestergaard,1972,53.8,Denmark,115,67.5,132.5,315,SBD,Single-ply,Open,F
 1,60,Valenti Nelubova,1966,59.4,Russia,207.5,147.5,185,540,SBD,Single-ply,Open,F
 2,60,Valid Iskandarova,1974,59,Kazakstan,200,107.5,205,512.5,SBD,Single-ply,Open,F
 3,60,Bettina Altizer,1962,58.7,US.America,200,137.5,170,507.5,SBD,Single-ply,Open,F
 4,60,Ayako Ikeya,1969,58.4,Japan,195,112.5,195,502.5,SBD,Single-ply,Open,F
-5,60,P‰ivi Haapoja,1965,58.8,Finland,197.5,90,202.5,490,SBD,Single-ply,Open,F
+5,60,P√§ivi Haapoja,1965,58.8,Finland,197.5,90,202.5,490,SBD,Single-ply,Open,F
 6,60,Svitlan Poplavska,1966,59.2,Ukraine,190,110,187.5,487.5,SBD,Single-ply,Open,F
 7,60,Aigul Gaifullina,1980,59.3,Kazakstan,180,105,202.5,487.5,SBD,Single-ply,Open,F
 8,60,Hsiao-Li Hsu,1981,59,C.Taipei,180,100,197.5,477.5,SBD,Single-ply,Open,F
@@ -64,7 +64,7 @@ DQ,67.5,Jena Mackey,1971,66.6,Bahamas,,,,,SBD,Single-ply,Open,F
 6,75,Vicki Huyser,1973,70.9,South Africa,185,112.5,175,472.5,SBD,Single-ply,Open,F
 7,75,Kim Everett,1983,74.4,US.America,187.5,92.5,187.5,467.5,SBD,Single-ply,Open,F
 8,75,Susanne Cleve,1964,71.7,Germany,160,102.5,172.5,435,SBD,Single-ply,Open,F
-9,75,Joke vanderMeulen,1951,70.9,Netherlands,165,90,172.5,427.5,SBD,Single-ply,Open,F
+9,75,Joke van der Meulen,1951,70.9,Netherlands,165,90,172.5,427.5,SBD,Single-ply,Open,F
 10,75,Gily Martinez,1978,70.5,Venezuela,160,80,140,380,SBD,Single-ply,Open,F
 11,75,Serena Perry,1965,73,New Zealand,140,80,145,365,SBD,Single-ply,Open,F
 DD,75,Petra Stehlikova,1966,73,Czechia,202.5,140,215,,SBD,Single-ply,Open,F
@@ -80,7 +80,7 @@ DD,75,Petra Stehlikova,1966,73,Czechia,202.5,140,215,,SBD,Single-ply,Open,F
 DQ,82.5,Min-Chu Hung,1983,80.9,C.Taipei,150,,,,SBD,Single-ply,Open,F
 1,90,Irina Lugovaya,1974,89.2,Russia,250,165,250,665,SBD,Single-ply,Open,F
 2,90,Iryna Yavorska,1981,87.1,Ukraine,222.5,145,240,607.5,SBD,Single-ply,Open,F
-3,90,Bren vanderMeulen,1978,89.8,Netherlands,200,140,182.5,522.5,SBD,Single-ply,Open,F
+3,90,Bren van der Meulen,1978,89.8,Netherlands,200,140,182.5,522.5,SBD,Single-ply,Open,F
 4,90,Ulricke Herchenhein,1962,87.8,Germany,180.5,122.5,215,517.5,SBD,Single-ply,Open,F
 5,90,Anna Sliwinska,1982,82.7,Poland,200,120,190,510,SBD,Single-ply,Open,F
 6,90,Jennifer Busby,1977,88,Great Britain,195,112.5,182.5,490,SBD,Single-ply,Open,F

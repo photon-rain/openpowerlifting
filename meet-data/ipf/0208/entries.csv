@@ -10,7 +10,7 @@ Place,WeightClassKg,Sex,Division,Name,BirthYear,BodyweightKg,Country,BestSquatKg
 4,56,M,Open,Sergiy Vatyuk,1962,55.8,Ukraina,200,152.5,215,567.5,SBD,Single-ply
 5,56,M,Open,Darius Wszola,1978,56,Poland,222.5,140,205,567.5,SBD,Single-ply
 6,56,M,Open,Azat Rakhmankulov,1975,55.6,Uzbekistan,205,110,240,555,SBD,Single-ply
-7,56,M,Open,Jürgen Nemeth,1972,56,Austria,200,115,225,540,SBD,Single-ply
+7,56,M,Open,JÃ¼rgen Nemeth,1972,56,Austria,200,115,225,540,SBD,Single-ply
 8,56,M,Open,Alan Whigham,1975,56,US.America,212.5,115,205,532.5,SBD,Single-ply
 9,56,M,Open,Stefan Kolsovsky,1961,55.8,Slovakia,195,137.5,160,492.5,SBD,Single-ply
 DQ,56,M,Open,Slawomir Sledz,1976,55.8,Poland,215,,,,SBD,Single-ply
@@ -40,12 +40,12 @@ DQ,60,M,Open,Maik Tronke,1976,59.6,Germany,,,,,SBD,Single-ply
 13,67.5,M,Open,Jean Seba Rheaume,1974,66.8,Canada,162.5,140,185,487.5,SBD,Single-ply
 14,67.5,M,Open,Richie Rosales,1976,67.1,Philippines,100,165,100,365,SBD,Single-ply
 DQ,67.5,M,Open,Vichar Mitev,1978,66.6,Bulgaria,,,,,SBD,Single-ply
-1,75,M,Open,Victor Furashkine,1969,74.8,Russia,328.5,215,320,862.5,SBD,Single-ply
+1,75,M,Open,Victor Furashkine,1969,74.8,Russia,328.5,215,320,863.5,SBD,Single-ply
 2,75,M,Open,AOleksand Kutcher,1980,74.6,Ukraina,307.5,192.5,315,815,SBD,Single-ply
 3,75,M,Open,Wade Hooper,1970,74.9,US.America,317.5,207.5,260,785,SBD,Single-ply
 4,75,M,Open,Jacek Spychala,1978,74.8,Poland,285,177.5,295,757.5,SBD,Single-ply
 5,75,M,Open,Andreas Zeilinger,1968,74.8,Austria,270,190,267.5,727.5,SBD,Single-ply
-6,75,M,Open,Maurice OïConnor,1953,74.7,Ireland,225,165,280,670,SBD,Single-ply
+6,75,M,Open,Maurice O'Connor,1953,74.7,Ireland,225,165,280,670,SBD,Single-ply
 7,75,M,Open,Erik Rasmusen,1962,75,Denmark,230,170,230,630,SBD,Single-ply
 8,75,M,Open,Peter Vadasz,1979,74.5,Hungary,230,175,210,615,SBD,Single-ply
 9,75,M,Open,Sean Muir,1970,74.2,Australia,220,142.5,250,612.5,SBD,Single-ply
@@ -107,7 +107,7 @@ DQ,90,M,Open,Daniele Ghirardi,1969,90,Italy,310,,,,SBD,Single-ply
 1,110,M,Open,Valentin Dedulia,1977,109,Russia,395,240,355,990,SBD,Single-ply
 2,110,M,Open,Nikolay Suslov,1979,106.4,Russia,380,245,340,965,SBD,Single-ply
 3,110,M,Open,Derek Pomana,1966,109.9,New Zealand,382.5,220,355,957.5,SBD,Single-ply
-4,110,M,Open,Jörgen Ljungberg,1967,109.2,Sweden,370,230,352.5,952.5,SBD,Single-ply
+4,110,M,Open,JÃ¶rgen Ljungberg,1967,109.2,Sweden,370,230,352.5,952.5,SBD,Single-ply
 5,110,M,Open,Viktor Karpik,1980,109.5,Ukraina,380,225,335,940,SBD,Single-ply
 6,110,M,Open,Ca Christoffersen,1971,107.9,Norway,367.5,227.5,310,905,SBD,Single-ply
 7,110,M,Open,Kevin Woodside,1964,108.9,Bahamas,332.5,217.5,352.5,902.5,SBD,Single-ply
@@ -116,7 +116,7 @@ DQ,90,M,Open,Daniele Ghirardi,1969,90,Italy,310,,,,SBD,Single-ply
 10,110,M,Open,Hannu Kopola,1978,109.9,Finland,332.5,207.5,335,875,SBD,Single-ply
 11,110,M,Open,Tom Nicholls,1963,109.6,Canada,320,237.5,310,867.5,SBD,Single-ply
 12,110,M,Open,Tollef Taksdal,1975,109.2,Norway,320,240,305,865,SBD,Single-ply
-13,110,M,Open,Lars Sörige,1968,108.3,Denmark,312.5,212.5,312.5,837.5,SBD,Single-ply
+13,110,M,Open,Lars SÃ¶rige,1968,108.3,Denmark,312.5,212.5,312.5,837.5,SBD,Single-ply
 14,110,M,Open,Juraj Pazstor,1960,110,Slovakia,320,170,325,815,SBD,Single-ply
 15,110,M,Open,Stephan Vorup,1973,109.6,Denmark,330,190,292.5,812.5,SBD,Single-ply
 16,110,M,Open,Mark Neele,1975,109.8,Netherlands,310,190,300,800,SBD,Single-ply
@@ -140,7 +140,7 @@ DQ,110,M,Open,Ignat Belousov,1976,108.6,Belorussia,,,,,SBD,Single-ply
 10,125,M,Open,Masamits Ichikawa,1972,114.2,Japan,335,225,320,880,SBD,Single-ply
 11,125,M,Open,Frode Rui,1969,117.9,Norway,340,220,320,880,SBD,Single-ply
 12,125,M,Open,Tamas Haidu,1980,123.5,Hungary,320,215,320,855,SBD,Single-ply
-13,125,M,Open,Morten S”rig,1969,124.8,Denmark,325,225,297.5,847.5,SBD,Single-ply
+13,125,M,Open,Morten Sorig,1969,124.8,Denmark,325,225,297.5,847.5,SBD,Single-ply
 14,125,M,Open,Koji Tachibana,1966,123.22,Japan,300,200,310,810,SBD,Single-ply
 15,125,M,Open,Steve Lousich,1965,113.8,New Zealand,285,227.5,250,762.5,SBD,Single-ply
 DQ,125,M,Open,Stoian Andreev,1978,124.77,Bulgaria,,,,,SBD,Single-ply

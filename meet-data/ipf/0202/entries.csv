@@ -1,4 +1,4 @@
-Place,Sex,WeightClassKg,,BirthYear,BodyweightKg,Country,BestSquatKg,BestBenchKg,BestDeadliftKg,TotalKg,Event,Equipment
+Place,Sex,WeightClassKg,Name,BirthYear,BodyweightKg,Country,BestSquatKg,BestBenchKg,BestDeadliftKg,TotalKg,Event,Equipment
 1,F,44,Natalya Krikunova,1981,43.5,Russia,132.5,70,135,337.5,SBD,Single-ply
 1,F,48,Elena Vorobyeva,1978,47.7,Russia,127.5,75,142.5,345,SBD,Single-ply
 1,F,52,Landysh Murtazina,1980,51.9,Russia,132.5,77.5,155,365,SBD,Single-ply
@@ -27,7 +27,6 @@ DQ,M,67.5,Vladimir Manitsyn,1982,67.2,Novgorod-R.,,,,,SBD,Single-ply
 2,M,75,Peep Pall,1970,73.6,Estonia,245,147.5,255,647.5,SBD,Single-ply
 DQ,M,75,Sergey Shulepov,1981,74.4,Novgorod-R.,280,165,265,,SBD,Single-ply
 1,M,82.5,Alexey Ermilov,1979,81.9,Russia,315,197.5,290,802.5,SBD,Single-ply
--90,M,, Kg,19,,,,,,,SBD,Single-ply
 1,M,90,Nikolai Marozov,1976,88.1,Belorussia,320,220,320,860,SBD,Single-ply
 2,M,90,Alexey Baluev,1978,89.5,Russia,315,202.5,315,832.5,SBD,Single-ply
 3,M,90,Sergey Stepanov,1982,87.3,Novgorod-R.,305,190,275,770,SBD,Single-ply

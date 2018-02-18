@@ -39,10 +39,10 @@ DQ,60,M,Hennis Washington,1970,USA,59.85,247.5,142.5,230,,SBD,Single-ply
 12,67.5,M,Thomas Andersen,1979,DEN,67.2,220,145,220,585,SBD,Single-ply
 13,67.5,M,Andrew Lulham,1974,AUS,67.15,187.5,125,210,522.5,SBD,Single-ply
 14,67.5,M,Jean-Sebastien Rheaume,1974,CAN,66.85,185,142.5,177.5,505,SBD,Single-ply
-,67.5,M,Vihar Mitev,1978,BUL,67.4,,,,,SBD,Single-ply
-,67.5,M,Nghiep Luu,1975,AUS,67.45,,,,,SBD,Single-ply
-,67.5,M,Sami Nieminen,1975,FIN,67.5,240,,,,SBD,Single-ply
-,67.5,M,Richard Lettner,1974,AUT,67.5,240,,,,SBD,Single-ply
+DQ,67.5,M,Vihar Mitev,1978,BUL,67.4,,,,,SBD,Single-ply
+DQ,67.5,M,Nghiep Luu,1975,AUS,67.45,,,,,SBD,Single-ply
+DQ,67.5,M,Sami Nieminen,1975,FIN,67.5,240,,,,SBD,Single-ply
+DQ,67.5,M,Richard Lettner,1974,AUT,67.5,240,,,,SBD,Single-ply
 1,75,M,Viktor Furazhkin,1969,RUS,75,325,220,315,860,SBD,Single-ply
 2,75,M,Viktor Baranov,1967,RUS,74.4,315,190,320,825,SBD,Single-ply
 3,75,M,Oleksandr Kutcher,1980,UKR,74.8,307.5,195,312.5,815,SBD,Single-ply
@@ -108,7 +108,7 @@ DQ,90,M,Michal Wilk,1981,POL,89.6,350,,,,SBD,Single-ply
 13,100,M,Eric Gagnon,1968,CAN,99.8,315,190,265,770,SBD,Single-ply
 14,100,M,Peter Bongers,1965,NED,99.6,290,167.5,300,757.5,SBD,Single-ply
 15,100,M,Gabor Schulteisz,1976,HUN,98.8,245,190,295,730,SBD,Single-ply
-16,100,M,Keld Ingerslev,1966,DEN,98.25,,,,,SBD,Single-ply
+DQ,100,M,Keld Ingerslev,1966,DEN,98.25,,,,,SBD,Single-ply
 DQ,100,M,Simon Weaver,1975,NZL,99,315,,,,SBD,Single-ply
 DQ,100,M,Kim D Hansen,1971,DEN,99.85,,,,,SBD,Single-ply
 DQ,100,M,Ivailo Christov,1979,BUL,99.8,375,257.5,332.5,,SBD,Single-ply
