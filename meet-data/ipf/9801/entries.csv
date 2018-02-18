@@ -1,4 +1,4 @@
-Place,WeightClassKg,Sex,Division,,BirthYear,BodyweightKg,WeightClassKg,BestSquatKg,BestBenchKg,BestDeadliftKg,TotalKg,Event,Equipment
+Place,WeightClassKg,Sex,Division,Name,BirthYear,BodyweightKg,Country,BestSquatKg,BestBenchKg,BestDeadliftKg,TotalKg,Event,Equipment
 1,44,F,Open,Svetlana Tesleva,1975,43.4,Russia,152.5,87.5,160,400,SBD,Single-ply
 2,44,F,Open,Raja Koskinen,1963,43.9,Finland,160,75,152.5,387.5,SBD,Single-ply
 3,44,F,Open,Anna-Li Prinkkala,1955,43.8,Finland,140,65,157.5,362.5,SBD,Single-ply
@@ -43,7 +43,7 @@ Place,WeightClassKg,Sex,Division,,BirthYear,BodyweightKg,WeightClassKg,BestSquat
 4,60,F,Open,Inger Blikra,1961,59.7,Norway,190,87.5,195,472.5,SBD,Single-ply
 5,60,F,Open,Svitlan Poplavska,1966,59.7,Ukraina,180,102.5,187.5,470,SBD,Single-ply
 6,60,F,Open,Heini Laitinen,1969,59.77,Finland,160,97.5,195,452.5,SBD,Single-ply
-7,60,F,Open,"Synn""ve Lund",1972,59.4,Norway,175,92.5,165,432.5,SBD,Single-ply
+7,60,F,Open,Synnove Lund,1972,59.4,Norway,175,92.5,165,432.5,SBD,Single-ply
 8,60,F,Open,Sveta Nazarenko,1965,59.9,Kazahkstan,160,90,170,420,SBD,Single-ply
 9,60,F,Open,Jennif Rey-Fisher,1971,59.9,US.America,155,87.5,177.5,420,SBD,Single-ply
 10,60,F,Open,Birgit Fischer,1963,57.1,Germany,157.5,75,185,417.5,SBD,Single-ply
@@ -74,7 +74,7 @@ DQ,67.5,F,Open,Irene Frangi,1964,67,Argentina,,,,,SBD,Single-ply
 6,75,F,Open,Leslie Look,1972,74.9,US.America,170,92.5,190,452.5,SBD,Single-ply
 7,75,F,Open,Andrea Sortwell,1959,74.9,US.America,155,107.5,187.5,450,SBD,Single-ply
 8,75,F,Open,Mariet Spronk,1955,69.7,Netherlands,152.5,95,187.5,435,SBD,Single-ply
-9,75,F,Open,Joke vanderMeulen,1951,69.4,Netherlands,155,85,172.5,412.5,SBD,Single-ply
+9,75,F,Open,Joke van der Meulen,1951,69.4,Netherlands,155,85,172.5,412.5,SBD,Single-ply
 10,75,F,Open,Aygul Iskandarova,1974,68.4,Uzbekistan,125,70,140,335,SBD,Single-ply
 DQ,75,F,Open,Päivi Haapoja,1965,69.4,Finland,,,,,SBD,Single-ply
 1,82.5,F,Open,Natal Rumyantseva,1971,82.3,Russia,235,135,235,605,SBD,Single-ply
@@ -89,9 +89,9 @@ DQ,75,F,Open,Päivi Haapoja,1965,69.4,Finland,,,,,SBD,Single-ply
 2,90,F,Open,Anna Ganenko,1975,89.6,Ukraina,200,125,180,505,SBD,Single-ply
 3,90,F,Open,Susanne Formgren,1962,89.4,Sweden,205,112.5,180,497.5,SBD,Single-ply
 4,90,F,Open,Ruma Pal,1966,89.5,India,175,85,152.5,412.5,SBD,Single-ply
-DD,90,F,Open,Alla Korshunova,1968,87.4,Russia,225,130,245,600,SBD,Single-ply
+DD,90,F,Open,Alla Korshunova,1968,87.4,Russia,225,130,245,,SBD,Single-ply
 1,90+,F,Open,Chen-Yeh Chao,1971,111.8,Chinese Taipei,275,170,225,670,SBD,Single-ply
 2,90+,F,Open,Chia-Sui Lee,1977,116.4,Chinese Taipei,275,137.5,242.5,655,SBD,Single-ply
 3,90+,F,Open,Anastasia Pavlova,1968,103.8,Russia,220,132.5,225,577.5,SBD,Single-ply
 4,90+,F,Open,Ele Igumenshcheva,1959,102,Uzbekistan,155,95,150,400,SBD,Single-ply
-DD,90+,F,Open,Tandra Choudhury,1959,103.2,India,185,100,135,420,SBD,Single-ply
+DD,90+,F,Open,Tandra Choudhury,1959,103.2,India,185,100,135,,SBD,Single-ply

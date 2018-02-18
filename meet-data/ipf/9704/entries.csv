@@ -83,7 +83,7 @@ DD,82.5,F,Junior,Elena Yurik,1977,RUS,76.8,,,,,,,SBD,Single-ply
 DQ,52,M,Junior,Maik Tronke,1976,GER,51.4,,,,,,,SBD,Single-ply
 DQ,52,M,Junior,Alikhan Rakhimzhan,1977,KAZ,51.8,,,,,,,SBD,Single-ply
 DQ,52,M,Junior,Mattias Hopp,1980,SWE,51.9,,,,,,,SBD,Single-ply
-1,56,M,Junior,Chun-Hsiung Hu,1974,TPE,55.5,260.5,110,265.5,635,,,SBD,Single-ply
+1,56,M,Junior,Chun-Hsiung Hu,1974,TPE,55.5,260.5,110,265.5,636,,,SBD,Single-ply
 2,56,M,Junior,Feng-Bin Wu,1976,TPE,55.6,197.5,112.5,210,520,,,SBD,Single-ply
 3,56,M,Junior,Noel Pannier,1976,FRA,55.4,185,117.5,200,502.5,,,SBD,Single-ply
 4,56,M,Junior,Slawomir Sledz,1976,POL,55.8,185,122.5,185,492.5,,,SBD,Single-ply
@@ -190,7 +190,7 @@ DQ,90,M,Junior,Kun-Chin Hsieh,1979,CHN,85.4,285,,,,,,SBD,Single-ply
 7,110,M,Junior,Andy-Elvis Dörner,1976,GER,104.6,300,160,285,745,,,SBD,Single-ply
 8,110,M,Junior,Tamas Velinzki,1975,HUN,105.1,295,175,270,740,,,SBD,Single-ply
 9,110,M,Junior,Jeff Striefel,1974,CAN,108,265,187.5,265,717.5,,,SBD,Single-ply
-DQ,110,M,Junior,Don Shiffer,1974,USA,109.2,315,0,-,,,,SBD,Single-ply
+DQ,110,M,Junior,Don Shiffer,1974,USA,109.2,315,,,,,,SBD,Single-ply
 DD,110,M,Junior,Zsolt Makovics,1975,HUN,105.9,,,,,,,SBD,Single-ply
 1,125,M,Junior,Michael Fritz,1974,GER,121,330,250,300,880,,,SBD,Single-ply
 2,125,M,Junior,Dean Bowring,1974,GBR,120.2,330,235,300,865,,,SBD,Single-ply
@@ -211,4 +211,4 @@ DD,125,M,Junior,Andy Lambert,1974,USA,123.5,,,,,,,SBD,Single-ply
 4,125+,M,Junior,Johan Wikberg,1975,SWE,125.8,315,230,295,840,,,SBD,Single-ply
 5,125+,M,Junior,Martin Lesk,1974,CZE,135.2,320,210,300,830,,,SBD,Single-ply
 6,125+,M,Junior,Shaw Quimby,1975,USA,136.5,292.5,205,280,777.5,,,SBD,Single-ply
-DD,125+,M,Junior,Attila Juhasz,1974,HUN,127,,,,,,,,
+DD,125+,M,Junior,Attila Juhasz,1974,HUN,127,,,,,,,SBD,Single-ply

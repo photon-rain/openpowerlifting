@@ -11,7 +11,7 @@ Place,WeightClassKg,Sex,Division,Name,BirthYear,BodyweightKg,Country,Bench1Kg,Be
 4,48,F,Open,Virva-Tuul Arpala,1969,47.8,Finland,80,85,-87.5,85,,85,B,Single-ply
 1,52,F,Open,Syoko Sakurai,1959,50.44,Japan,95,100,-105,100,,100,B,Single-ply
 2,52,F,Open,Kuan-Ting Chen,1977,48.8,C.Taipei,90,-95,-95,90,,90,B,Single-ply
-3,52,F,Open,Mervi Sirki„,1972,51.7,Finland,-85,-85,85,85,,85,B,Single-ply
+3,52,F,Open,Mervi SirkiÃ¤,1972,51.7,Finland,-85,-85,85,85,,85,B,Single-ply
 4,52,F,Open,Trish Muldrock,1954,48.7,New Zealand,65,70,-72.5,70,,70,B,Single-ply
 5,52,F,Open,Karen Thomson,1962,50.4,New Zealand,62.5,67.5,-72.5,67.5,,67.5,B,Single-ply
 1,56,F,Open,Li-Min Lin,1970,52.3,C.Taipei,87.5,92.5,97.5,97.5,,97.5,B,Single-ply
@@ -34,7 +34,7 @@ DQ,56,F,Open,Colette Peniry,1968,55.7,Great Britain,-77.5,-77.5,-77.5,,,,B,Singl
 5,67.5,F,Open,Tammi Callahan,1962,64.3,US.America,100,105,-107.5,105,,105,B,Single-ply
 6,67.5,F,Open,Roshelle Jessop,1975,66.5,New Zealand,-95,95,-100,95,,95,B,Single-ply
 7,67.5,F,Open,Angela Simons,1981,60.9,US.America,92.5,-100,-100,92.5,,92.5,B,Single-ply
-8,67.5,F,Open,Birgit Witt,1963,67.2,Germany,-95,-102.5,-102.5,,,,B,Single-ply
+DQ,67.5,F,Open,Birgit Witt,1963,67.2,Germany,-95,-102.5,-102.5,,,,B,Single-ply
 1,75,F,Open,Claudia Narovnigg,1972,74.9,Austria,117.5,122.5,125,125,,125,B,Single-ply
 2,75,F,Open,Kimiko Ohba,1954,68.9,Japan,115,-120,122.5,122.5,,122.5,B,Single-ply
 3,75,F,Open,Brooke Wessler,1977,69.1,US.America,112.5,-117.5,-117.5,112.5,,112.5,B,Single-ply
@@ -53,7 +53,7 @@ DQ,56,F,Open,Colette Peniry,1968,55.7,Great Britain,-77.5,-77.5,-77.5,,,,B,Singl
 1,90,F,Open,Irina Naskripyak,1960,89.7,Russia,137.5,145,-150,145,,145,B,Single-ply
 2,90,F,Open,Svetlana Paltseva,1969,89.66,Russia,130,137.5,-145,137.5,,137.5,B,Single-ply
 3,90,F,Open,Pei-Jung Lee,1983,89.78,C.Taipei,110,122.5,-127.5,122.5,,122.5,B,Single-ply
-4,90,F,Open,Bren vanderMeulen,1978,89.8,Netherlands,110,117.5,-125,117.5,,117.5,B,Single-ply
+4,90,F,Open,Bren van der Meulen,1978,89.8,Netherlands,110,117.5,-125,117.5,,117.5,B,Single-ply
 5,90,F,Open,Sampa Guha,1967,89,India,95,102.5,-107.5,102.5,,102.5,B,Single-ply
 1,90+,F,Open,Chen-Yeh Chao,1971,113.7,C.Taipei,170,175,-180,175,,175,B,Single-ply
 2,90+,F,Open,Deborah Ferrell,1964,120.4,US.America,155,162.5,-180,162.5,,162.5,B,Single-ply
@@ -107,21 +107,21 @@ DQ,82.5,M,Open,Susumu Otani,1952,81.44,Japan,-235,-235,-235,,,,B,Single-ply
 7,90,M,Open,Erwin Krokkee,1966,89.9,Netherlands,-210,210,215,215,,215,B,Single-ply
 8,90,M,Open,Noel Frank,1957,88.6,New Zealand,-195,195,210,210,,210,B,Single-ply
 9,90,M,Open,Veiko Friedrich,1964,89.2,Germany,200,207.5,-212.5,207.5,,207.5,B,Single-ply
-10,90,M,Open,Peter Lüftinger,1972,89.6,Austria,197.5,202.5,-207.5,202.5,,202.5,B,Single-ply
+10,90,M,Open,Peter Luftinger,1972,89.6,Austria,197.5,202.5,-207.5,202.5,,202.5,B,Single-ply
 11,90,M,Open,Yaroslaw Chala,1948,89.6,Ukraina,-180,180,-187.5,180,,180,B,Single-ply
 12,90,M,Open,Sanjeev Kr. Sharma,1969,88.1,India,170,-180,-180,170,,170,B,Single-ply
 13,90,M,Open,Robert Truchon,1968,89,Canada,130,140,-150,140,,140,B,Single-ply
 1,100,M,Open,Ralph Young,1963,98.9,US.America,232.5,240,245,245,,245,B,Single-ply
 2,100,M,Open,Klaus Semskij,1964,99.4,Germany,227.5,235,242.5,242.5,,242.5,B,Single-ply
 3,100,M,Open,Jerzy Furmanek,1952,99.2,Poland,240,-245,-245,240,,240,B,Single-ply
-4,100,M,Open,Hans Dahlström,1966,98.4,Sweden,227.5,232.5,-237.5,232.5,,232.5,B,Single-ply
+4,100,M,Open,Hans Dahlstrom,1966,98.4,Sweden,227.5,232.5,-237.5,232.5,,232.5,B,Single-ply
 5,100,M,Open,Sven Raskin,1965,99.6,Germany,-225,225,-242.5,225,,225,B,Single-ply
 6,100,M,Open,Shinichi Hara,1973,98.8,Japan,222.5,-235,-245,222.5,,222.5,B,Single-ply
 7,100,M,Open,Richard Lewis,1976,95.8,Great Britain,212.5,-220,220,220,,220,B,Single-ply
 8,100,M,Open,Yegi Williams,1965,97.3,South Africa,185,195,205,205,,205,B,Single-ply
 9,100,M,Open,Sushil Tagra,1966,94.8,India,180,185,190,190,,190,B,Single-ply
 10,100,M,Open,Lauris Pavulans,1963,97.9,Latvia,140,150,-160,150,,150,B,Single-ply
-DQ,100,M,Open,Szabolcs Onozo,1970,98.4,Hungary,265,270,275,,,,B,Single-ply
+DQ,100,M,Open,Szabolcs Onozo,1970,98.4,Hungary,265,270,275,275,,,B,Single-ply
 1,110,M,Open,Wieslaw Kruk,1958,109.7,Poland,262.5,-270,275,275,,275,B,Single-ply
 2,110,M,Open,Masashi Saitoh,1968,109.5,Japan,260,267.5,-275,267.5,,267.5,B,Single-ply
 3,110,M,Open,Kenneth Mattson,1954,104,Sweden,252.5,-260,-262.5,252.5,,252.5,B,Single-ply
@@ -134,8 +134,8 @@ DQ,100,M,Open,Szabolcs Onozo,1970,98.4,Hungary,265,270,275,,,,B,Single-ply
 10,110,M,Open,Steve Lousich,1965,109.7,New Zealand,215,-220,-220,215,,215,B,Single-ply
 11,110,M,Open,Lauwrens Rosslee,1966,109.4,South Africa,200,210,-217.5,210,,210,B,Single-ply
 12,110,M,Open,Strase Stojanoski,1962,109.9,Australia,-175,175,-182.5,175,,175,B,Single-ply
-13,110,M,Open,Marcus Hoen,1966,108.1,Germany,-220,-220,-220,,,,B,Single-ply
-DQ,110,M,Open,Vladisla Fatianov,1975,105.3,Russia,250,257.5,262.5,262.5,,262.5,B,Single-ply
+DQ,110,M,Open,Marcus Hoen,1966,108.1,Germany,-220,-220,-220,,,,B,Single-ply
+DQ,110,M,Open,Vladisla Fatianov,1975,105.3,Russia,250,257.5,262.5,262.5,,,B,Single-ply
 1,125,M,Open,Eduard Isakov,1973,123.5,Russia,272.5,-277.5,277.5,277.5,,277.5,B,Single-ply
 2,125,M,Open,Wieslaw Klawski,1964,123.5,Poland,252.5,260,267.5,267.5,,267.5,B,Single-ply
 3,125,M,Open,Collin Rhodes,1967,122,US.America,-250,250,265,265,,265,B,Single-ply
@@ -149,8 +149,8 @@ DQ,110,M,Open,Vladisla Fatianov,1975,105.3,Russia,250,257.5,262.5,262.5,,262.5,B
 11,125,M,Open,Steve Little,1960,116.8,Australia,200,-210,-210,200,,200,B,Single-ply
 12,125,M,Open,Ian Furman,1967,122.8,South Africa,192.5,-202.5,-202.5,192.5,,192.5,B,Single-ply
 13,125,M,Open,Anton Speth,1955,119.6,Germany,190,-200,-202.5,190,,190,B,Single-ply
-14,125,M,Open,Antony Wendt,1953,111.9,France,-225,-225,-225,,,,B,Single-ply
-15,125,M,Open,Marcus Hirvonen,1976,120.3,Sweden,-252.5,-252.5,-252.5,,,,B,Single-ply
+DQ,125,M,Open,Antony Wendt,1953,111.9,France,-225,-225,-225,,,,B,Single-ply
+DQ,125,M,Open,Marcus Hirvonen,1976,120.3,Sweden,-252.5,-252.5,-252.5,,,,B,Single-ply
 1,125+,M,Open,Daisuke Midote,1972,131.9,Japan,290,300,-305,300,,300,B,Single-ply
 2,125+,M,Open,Ulf Wiklund,1964,161.5,Sweden,272.5,275,-280,275,,275,B,Single-ply
 3,125+,M,Open,Mike Hodge,1970,163.5,US.America,260,272.5,-280,272.5,,272.5,B,Single-ply

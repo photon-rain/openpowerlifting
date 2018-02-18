@@ -61,7 +61,7 @@ DQ,60,M,Master 1,Hiroyuki Isagawa,1953,59.8,Japan,,,,,SBD,Single-ply
 1,67.5,M,Master 1,Arval Bridges,1954,67,US.America,215,152.5,242.5,610,SBD,Single-ply
 2,67.5,M,Master 1,Ron Kerr,1955,67.4,Great Britain,200,127.5,230,557.5,SBD,Single-ply
 3,67.5,M,Master 1,Rejean Talon,1957,66.7,Canada,185,145,212.5,542.5,SBD,Single-ply
-1,75,M,Master 1,Maurice O´Connor,1953,74.5,Ireland,235,162.5,292.5,690,SBD,Single-ply
+1,75,M,Master 1,Maurice O'Connor,1953,74.5,Ireland,235,162.5,292.5,690,SBD,Single-ply
 2,75,M,Master 1,Claude Dallaire,1960,73.7,Canada,230,140,287.5,657.5,SBD,Single-ply
 3,75,M,Master 1,Carlos Lewis,1958,73.8,US.America,255,157.5,240,652.5,SBD,Single-ply
 4,75,M,Master 1,Yuriy Kolchev,1958,74.6,Russia,230,150,242.5,622.5,SBD,Single-ply
@@ -89,7 +89,7 @@ DQ,82.5,M,Master 1,Giorgio Criscione,1961,82.3,Italy,,,,,SBD,Single-ply
 9,90,M,Master 1,Ron Delaney,1951,87.8,Canada,222.5,155,277.5,655,SBD,Single-ply
 10,90,M,Master 1,Paul Barnbrook,1954,89.9,Great Britain,240,145,270,655,SBD,Single-ply
 11,90,M,Master 1,Brett Smartt,1959,90,Australia,230,155,240,625,SBD,Single-ply
-DQ,90,M,Master 1,G”ran Lundeberg,1954,88.2,Sweden,,,,,SBD,Single-ply
+DQ,90,M,Master 1,Goran Lundeberg,1954,88.2,Sweden,,,,,SBD,Single-ply
 1,100,M,Master 1,Aldagi Sicoli,1960,98.9,France,310,180,300,790,SBD,Single-ply
 2,100,M,Master 1,Scott Roberts,1958,99.6,US.America,317.5,182.5,280,780,SBD,Single-ply
 3,100,M,Master 1,Vladimir Tsukanov,1959,99.9,Russia,312.5,195,270,777.5,SBD,Single-ply
@@ -108,7 +108,7 @@ DQ,90,M,Master 1,G”ran Lundeberg,1954,88.2,Sweden,,,,,SBD,Single-ply
 8,110,M,Master 1,Steve Chomitz,1957,107.5,Canada,240,175,267.5,682.5,SBD,Single-ply
 1,125,M,Master 1,John Neighbour,1954,122.4,Great Britain,330,230,310,870,SBD,Single-ply
 2,125,M,Master 1,Tom Weeks,1953,123.1,US.America,317.5,195,312.5,825,SBD,Single-ply
-3,125,M,Master 1,Reijo Hänninen,1958,124.2,Finland,310,197.5,285,792.5,SBD,Single-ply
+3,125,M,Master 1,Reijo HÃ¤nninen,1958,124.2,Finland,310,197.5,285,792.5,SBD,Single-ply
 4,125,M,Master 1,Sven J. Haugen,1961,122.8,Norwegen,290,180,280,750,SBD,Single-ply
 5,125,M,Master 1,Brock Haywood,1961,123.2,Canada,275,162.5,255,692.5,SBD,Single-ply
 6,125,M,Master 1,William Pakoti,1953,121.5,New Zealand,245,157.5,220,622.5,SBD,Single-ply
@@ -138,7 +138,7 @@ DQ,67.5,M,Master 2,Katsuji Okiura,1945,66.5,Japan,,,,,SBD,Single-ply
 1,82.5,M,Master 2,Will Lincoln,1950,81.5,Great Britain,255,170,250,675,SBD,Single-ply
 2,82.5,M,Master 2,Ali Bouchakour,1945,80.3,France,215,150,250,615,SBD,Single-ply
 3,82.5,M,Master 2,George Andersson,1947,81.2,New Zealand,200,127.5,265,592.5,SBD,Single-ply
-4,82.5,M,Master 2,Günter Lüdecke,1948,81.5,Germany,207.5,120,235,562.5,SBD,Single-ply
+4,82.5,M,Master 2,GÃ¼nter LÃ¼decke,1948,81.5,Germany,207.5,120,235,562.5,SBD,Single-ply
 5,82.5,M,Master 2,Johjn Bourgoin,1946,75.2,Canada,227.5,122.5,192.5,542.5,SBD,Single-ply
 6,82.5,M,Master 2,Tom Steward,1948,82,Canada,192.5,117.5,222.5,532.5,SBD,Single-ply
 7,82.5,M,Master 2,Karel Sourek,1943,79.3,Czechia,195,110,220,525,SBD,Single-ply
@@ -172,12 +172,12 @@ DQ,90,M,Master 2,Piero Andreatta,1950,85.9,Italy,277.5,145,272.5,,SBD,Single-ply
 7,110,M,Master 2,Norberto Carrizo,1948,108.5,Argentina,250,137.5,235,622.5,SBD,Single-ply
 8,110,M,Master 2,Del Worley,1949,109,US.America,257.5,122.5,237.5,617.5,SBD,Single-ply
 9,110,M,Master 2,Reijo Jaakkola,1948,102.6,Finland,100,170,235,505,SBD,Single-ply
-DQ,110,M,Master 2,Gerard McNamara,1950,103.1,Ireland,265,165,275,705,SBD,Single-ply
+DQ,110,M,Master 2,Gerard McNamara,1950,103.1,Ireland,265,165,275,,SBD,Single-ply
 1,125,M,Master 2,Alexa Maximushkin,1950,114.1,Russia,302.5,205,280,787.5,SBD,Single-ply
 2,125,M,Master 2,Ernie Surrel,1947,124.1,US.America,300,195,255,750,SBD,Single-ply
 3,125,M,Master 2,William Morris,1944,122.4,US.America,272.5,190,252.5,715,SBD,Single-ply
 4,125,M,Master 2,Denis Chasse,1950,120.9,Canada,252.5,185,260,697.5,SBD,Single-ply
-5,125,M,Master 2,Georg Boström,1947,117.1,Sweden,175,120,160,455,SBD,Single-ply
+5,125,M,Master 2,Georg BostrÃ¶m,1947,117.1,Sweden,175,120,160,455,SBD,Single-ply
 1,125+,M,Master 2,Oscar Soria,1948,167,Argentina,310,175,275,760,SBD,Single-ply
 2,125+,M,Master 2,Brett McCune,1947,141.8,US.America,240,185,290,715,SBD,Single-ply
 1,52,M,Master 3,Yoshio Hirano,1939,51.1,Japan,130,90,150,370,SBD,Single-ply
@@ -185,7 +185,7 @@ DQ,110,M,Master 2,Gerard McNamara,1950,103.1,Ireland,265,165,275,705,SBD,Single-
 1,60,M,Master 3,Shinichi Tokuda,1936,57.3,Japan,150,50,180,380,SBD,Single-ply
 1,67.5,M,Master 3,Robert Cortes,1930,67.1,US.America,165,110,212.5,487.5,SBD,Single-ply
 2,67.5,M,Master 3,Dillon Maier,1935,65.8,US.America,167.5,72.5,197.5,437.5,SBD,Single-ply
-3,67.5,M,Master 3,Dezsö Szloboda,1937,64.8,Germany,160,60,175,395,SBD,Single-ply
+3,67.5,M,Master 3,DezsÃ¶ Szloboda,1937,64.8,Germany,160,60,175,395,SBD,Single-ply
 1,75,M,Master 3,Alain Penlae,1940,73.4,France,160,110,190,460,SBD,Single-ply
 2,75,M,Master 3,Fred Archabault,1923,74,US.America,152.5,95,170,417.5,SBD,Single-ply
 1,82.5,M,Master 3,Francois Chazelle,1938,80.9,France,200,95,252.5,547.5,SBD,Single-ply
@@ -197,7 +197,7 @@ DQ,110,M,Master 2,Gerard McNamara,1950,103.1,Ireland,265,165,275,705,SBD,Single-
 3,90,M,Master 3,Jim Waters,1941,86.9,US.America,162.5,110,215,487.5,SBD,Single-ply
 4,90,M,Master 3,Lynton Lam,1941,84,Canada,170,100,215,485,SBD,Single-ply
 5,90,M,Master 3,Hans Behnke,1935,88.9,Germany,130,85,185,400,SBD,Single-ply
-1,100,M,Master 3,Günter Schwarz,1941,90.9,Germany,185,100,150,435,SBD,Single-ply
+1,100,M,Master 3,GÃ¼nter Schwarz,1941,90.9,Germany,185,100,150,435,SBD,Single-ply
 2,100,M,Master 3,Jack Lovell,1930,95.9,Canada,70,57.5,100,227.5,SBD,Single-ply
 DQ,100,M,Master 3,Stan Chatis,1937,96.8,US.America,185,,,,SBD,Single-ply
 1,110,M,Master 3,Truls Kristensen,1939,108.5,Norwegen,267.5,180,250,697.5,SBD,Single-ply

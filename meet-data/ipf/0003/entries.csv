@@ -1,46 +1,46 @@
 Place,WeightClassKg,Sex,Division,Name,BirthYear,BodyweightKg,Country,BestSquatKg,BestBenchKg,BestDeadliftKg,TotalKg,Event,Equipment
-1,LW,F,Master 1,Vuokko Viitasaari,1954,47.5,Finland,142.5,77.5,167.5,387.5,SBD,Single-ply
-2,LW,F,Master 1,Svetlana Eremenko,1957,50.8,Russia,135,62.5,150,347.5,SBD,Single-ply
-3,LW,F,Master 1,Alexan Karbysheva,1956,47.7,Russia,132.5,67.5,130,330,SBD,Single-ply
-4,LW,F,Master 1,Sally Bowers,1949,51.3,US.America,130,57.5,157.5,345,SBD,Single-ply
-5,LW,F,Master 1,Cathy Solan,1958,44,US.America,112.5,52.5,130,295,SBD,Single-ply
-6,LW,F,Master 1,Seiko Omori,1951,50.9,Japan,130,60,137.5,327.5,SBD,Single-ply
-7,LW,F,Master 1,Monika Bruder,1954,47.5,Germany,122.5,52.5,127.5,302.5,SBD,Single-ply
-8,LW,F,Master 1,Nadejda Uvachan,1944,51.5,Russia,122.5,67.5,130,320,SBD,Single-ply
-9,LW,F,Master 1,Yoko Matsuura,1958,51.6,Japan,120,72.5,125,317.5,SBD,Single-ply
-10,LW,F,Master 1,Donna Aliminosa,1951,42.8,US.America,85,45,105,235,SBD,Single-ply
-11,LW,F,Master 1,Seija Turunen,1947,47.5,Finland,82.5,50,100,232.5,SBD,Single-ply
-DQ,LW,F,Master 1,Liliane Boulle,1946,43.2,France,100,,,,SBD,Single-ply
-1,MW,F,Master 1,Natalia Kashirina,1954,58.9,Russia,167.5,85,185,437.5,SBD,Single-ply
-2,MW,F,Master 1,Ellen Stein,1953,58.7,US.America,155,82.5,190,427.5,SBD,Single-ply
-3,MW,F,Master 1,Kazuko Ishikawa,1956,59.6,Japan,147.5,90,155,392.5,SBD,Single-ply
-4,MW,F,Master 1,Mieke Vivijes,1953,55.6,Belgium,132.5,70,165,367.5,SBD,Single-ply
-5,MW,F,Master 1,Lucienne Daumas,1955,55.3,France,135,72.5,157.5,365,SBD,Single-ply
-6,MW,F,Master 1,Rita Bass,1945,56.8,G. Britain,135,70,167.5,372.5,SBD,Single-ply
-7,MW,F,Master 1,Adina Hykova,1943,58,Czechia,125,75,155,355,SBD,Single-ply
-8,MW,F,Master 1,Kate Dingle Craig,1957,59,US.America,125,75,140,340,SBD,Single-ply
-9,MW,F,Master 1,Lydia Louarduzzi,1958,56.1,France,125,65,135,325,SBD,Single-ply
-10,MW,F,Master 1,Hana Takacova,1954,66.8,Czechia,145,85,140,370,SBD,Single-ply
-11,MW,F,Master 1,Doreen Dowsett,1951,64.9,G. Britain,115,57.5,155,327.5,SBD,Single-ply
-12,MW,F,Master 1,Setsuko Takahashi,1949,52.7,Japan,105,55,105,265,SBD,Single-ply
-13,MW,F,Master 1,Lanette Lopez,1959,55,US.America,95,50,127.5,272.5,SBD,Single-ply
-14,MW,F,Master 1,Marianne Lankau,1953,65.3,Germany,102.5,65,120,287.5,SBD,Single-ply
-15,MW,F,Master 1,Ursula Nothnagel,1938,58.8,Germany,90,57.5,110,257.5,SBD,Single-ply
-DQ,MW,F,Master 1,Hatsuko Kimura,1951,53.4,Japan,130,,,,SBD,Single-ply
-1,HW,F,Master 1,Harriett Hall,1948,95,US.America,212.5,130,207.5,550,SBD,Single-ply
-2,HW,F,Master 1,Mariet Spronk,1955,71.4,Holland,160,97.5,182.5,440,SBD,Single-ply
-3,HW,F,Master 1,Rosemarie Beer,1945,75.5,Austria,172.5,105,177.5,455,SBD,Single-ply
-4,HW,F,Master 1,Tatyana Fomina,1946,67.6,Russia,175,67.5,175,417.5,SBD,Single-ply
-5,HW,F,Master 1,Joke vanderMeulen,1951,70.4,Holland,165,85,170,420,SBD,Single-ply
-6,HW,F,Master 1,Ruth Welding,1956,67.7,US.America,137.5,72.5,162.5,372.5,SBD,Single-ply
-7,HW,F,Master 1,Sue Hallen,1957,106.6,US.America,175,125,155,455,SBD,Single-ply
-8,HW,F,Master 1,Sue Hollanos,1951,84,G. Britain,162.5,57.5,150,370,SBD,Single-ply
-9,HW,F,Master 1,Jana Hranickova,1955,70.2,Czechia,137.5,65,122.5,325,SBD,Single-ply
-10,HW,F,Master 1,Tho Gardarsdottir,1944,84.5,Iceland,115,82.5,157.5,355,SBD,Single-ply
-11,HW,F,Master 1,Helen Richards,1953,69.4,G. Britain,120,57.5,132.5,310,SBD,Single-ply
-12,HW,F,Master 1,Lizet v Schijndel,1958,79.8,Holland,120,60,152.5,332.5,SBD,Single-ply
-13,HW,F,Master 1,Catherine Wass,1951,73,G. Britain,120,62.5,125,307.5,SBD,Single-ply
-14,HW,F,Master 1,Anke Beninga,1954,72,Germany,97.5,67.5,120,285,SBD,Single-ply
+1,52,F,Master 1,Vuokko Viitasaari,1954,47.5,Finland,142.5,77.5,167.5,387.5,SBD,Single-ply
+2,52,F,Master 1,Svetlana Eremenko,1957,50.8,Russia,135,62.5,150,347.5,SBD,Single-ply
+3,52,F,Master 1,Alexan Karbysheva,1956,47.7,Russia,132.5,67.5,130,330,SBD,Single-ply
+4,52,F,Master 1,Sally Bowers,1949,51.3,US.America,130,57.5,157.5,345,SBD,Single-ply
+5,52,F,Master 1,Cathy Solan,1958,44,US.America,112.5,52.5,130,295,SBD,Single-ply
+6,52,F,Master 1,Seiko Omori,1951,50.9,Japan,130,60,137.5,327.5,SBD,Single-ply
+7,52,F,Master 1,Monika Bruder,1954,47.5,Germany,122.5,52.5,127.5,302.5,SBD,Single-ply
+8,52,F,Master 1,Nadejda Uvachan,1944,51.5,Russia,122.5,67.5,130,320,SBD,Single-ply
+9,52,F,Master 1,Yoko Matsuura,1958,51.6,Japan,120,72.5,125,317.5,SBD,Single-ply
+10,52,F,Master 1,Donna Aliminosa,1951,42.8,US.America,85,45,105,235,SBD,Single-ply
+11,52,F,Master 1,Seija Turunen,1947,47.5,Finland,82.5,50,100,232.5,SBD,Single-ply
+DQ,52,F,Master 1,Liliane Boulle,1946,43.2,France,100,,,,SBD,Single-ply
+1,67.5,F,Master 1,Natalia Kashirina,1954,58.9,Russia,167.5,85,185,437.5,SBD,Single-ply
+2,67.5,F,Master 1,Ellen Stein,1953,58.7,US.America,155,82.5,190,427.5,SBD,Single-ply
+3,67.5,F,Master 1,Kazuko Ishikawa,1956,59.6,Japan,147.5,90,155,392.5,SBD,Single-ply
+4,67.5,F,Master 1,Mieke Vivijes,1953,55.6,Belgium,132.5,70,165,367.5,SBD,Single-ply
+5,67.5,F,Master 1,Lucienne Daumas,1955,55.3,France,135,72.5,157.5,365,SBD,Single-ply
+6,67.5,F,Master 1,Rita Bass,1945,56.8,G. Britain,135,70,167.5,372.5,SBD,Single-ply
+7,67.5,F,Master 1,Adina Hykova,1943,58,Czechia,125,75,155,355,SBD,Single-ply
+8,67.5,F,Master 1,Kate Dingle Craig,1957,59,US.America,125,75,140,340,SBD,Single-ply
+9,67.5,F,Master 1,Lydia Louarduzzi,1958,56.1,France,125,65,135,325,SBD,Single-ply
+10,67.5,F,Master 1,Hana Takacova,1954,66.8,Czechia,145,85,140,370,SBD,Single-ply
+11,67.5,F,Master 1,Doreen Dowsett,1951,64.9,G. Britain,115,57.5,155,327.5,SBD,Single-ply
+12,67.5,F,Master 1,Setsuko Takahashi,1949,52.7,Japan,105,55,105,265,SBD,Single-ply
+13,67.5,F,Master 1,Lanette Lopez,1959,55,US.America,95,50,127.5,272.5,SBD,Single-ply
+14,67.5,F,Master 1,Marianne Lankau,1953,65.3,Germany,102.5,65,120,287.5,SBD,Single-ply
+15,67.5,F,Master 1,Ursula Nothnagel,1938,58.8,Germany,90,57.5,110,257.5,SBD,Single-ply
+DQ,67.5,F,Master 1,Hatsuko Kimura,1951,53.4,Japan,130,,,,SBD,Single-ply
+1,67.5+,F,Master 1,Harriett Hall,1948,95,US.America,212.5,130,207.5,550,SBD,Single-ply
+2,67.5+,F,Master 1,Mariet Spronk,1955,71.4,Holland,160,97.5,182.5,440,SBD,Single-ply
+3,67.5+,F,Master 1,Rosemarie Beer,1945,75.5,Austria,172.5,105,177.5,455,SBD,Single-ply
+4,67.5+,F,Master 1,Tatyana Fomina,1946,67.6,Russia,175,67.5,175,417.5,SBD,Single-ply
+5,67.5+,F,Master 1,Joke van der Meulen,1951,70.4,Holland,165,85,170,420,SBD,Single-ply
+6,67.5+,F,Master 1,Ruth Welding,1956,67.7,US.America,137.5,72.5,162.5,372.5,SBD,Single-ply
+7,67.5+,F,Master 1,Sue Hallen,1957,106.6,US.America,175,125,155,455,SBD,Single-ply
+8,67.5+,F,Master 1,Sue Hollanos,1951,84,G. Britain,162.5,57.5,150,370,SBD,Single-ply
+9,67.5+,F,Master 1,Jana Hranickova,1955,70.2,Czechia,137.5,65,122.5,325,SBD,Single-ply
+10,67.5+,F,Master 1,Tho Gardarsdottir,1944,84.5,Iceland,115,82.5,157.5,355,SBD,Single-ply
+11,67.5+,F,Master 1,Helen Richards,1953,69.4,G. Britain,120,57.5,132.5,310,SBD,Single-ply
+12,67.5+,F,Master 1,Lizet v Schijndel,1958,79.8,Holland,120,60,152.5,332.5,SBD,Single-ply
+13,67.5+,F,Master 1,Catherine Wass,1951,73,G. Britain,120,62.5,125,307.5,SBD,Single-ply
+14,67.5+,F,Master 1,Anke Beninga,1954,72,Germany,97.5,67.5,120,285,SBD,Single-ply
 1,52,M,Master 1,Antonio Taguibao,1956,51.5,Philippines,165,80,190,435,SBD,Single-ply
 2,52,M,Master 1,Masaru Kagawa,1953,51.7,Japan,135,107.5,155,397.5,SBD,Single-ply
 3,52,M,Master 1,Yutaka Yamashita,1959,51.8,Japan,120,110,130,360,SBD,Single-ply
