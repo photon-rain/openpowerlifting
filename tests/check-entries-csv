@@ -464,22 +464,33 @@ def check_row_event_consistency(row, csv):
             perror("DQ'd lifter must not have a TotalKg. Row: %s" % row)
 
 
-#Checks that lifter sex matches lifter weight class
+#Checks that athletes of the wrong sex are not in a single-sex weight class
 def check_row_weightclass_sex(row,csv):
+
     if not 'Sex' in csv.fieldnames or not 'WeightClassKg' in csv.fieldnames:
         return
-    ipf_mens_classes = ['53','59','66','74','83','93','105','120','120+']
-    ipf_womens_classes = ['43','47','57','63','72','84','84+'] #Don't have -52 as this overlaps with a traditional class
 
-    trad_mens_only = ['100','110','125','125+']
-    trad_womens_only = ['44','48','90+']
+    ipf_men   = ['59','66','74','83','93','105','120','120+'] #No -53 as this is an IDFPF womens class
+    trad_men_only = ['125','140','140+'] #No 100,110 due to SPF,USPA etc
+    old_usapl_men_only = ['145','145+']
 
-    if row[csv.index('Sex')] is 'M' and row[csv.index('WeightClassKg')] in ipf_womens_classes+trad_womens_only:
-            pwarning("Male lifter in female weight-class: %s %s kg" % (row[csv.index('Name')],row[csv.index('WeightClassKg')]))
-    #Not checking the traditional classes right now due to SPF,USPA etc
-    elif row[csv.index('Sex')] is 'F' and row[csv.index('WeightClassKg')] in ipf_mens_classes: 
-            pwarning("Female lifter in male weight-class: %s %s kg" % (row[csv.index('Name')],row[csv.index('WeightClassKg')]))
+    men_only = ipf_men+trad_men_only +old_usapl_men_only
 
+    #No -52kg as this overlaps with a traditional weight-class
+    ipf_women = ['43','47','57','63','72','84','84+']
+    trad_women_only = ['90+'] #SPF has 44 & 48 kg mens classes
+
+    women_only = ipf_women+trad_women_only
+
+
+    if row[csv.index('Sex')] is 'M' and row[csv.index('WeightClassKg')] in women_only:
+        pwarning("Lifter \"%s\" sex (%s) does not match WtCls (%s)" %
+                        (row[csv.index('Name')], row[csv.index('Sex')],
+                         row[csv.index('WeightClassKg')]))
+    elif row[csv.index('Sex')] is 'F' and row[csv.index('WeightClassKg')] in men_only:
+        pwarning("Lifter \"%s\" sex (%s) does not match WtCls (%s)" %
+                        (row[csv.index('Name')], row[csv.index('Sex')],
+                         row[csv.index('WeightClassKg')]))
 
 # Women shouldn't accidentally be given male SHW classes.
 # Bodyweight should match the weight class.
@@ -729,7 +740,7 @@ def check(scriptname, filename):
     reset_filename_state(filename)
 
     csv = oplcsv.Csv(filename)
-
+    print(filename)
     check_headers(csv)
 
     for row in csv.rows:
