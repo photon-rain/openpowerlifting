@@ -464,7 +464,6 @@ def check_row_event_consistency(row, csv):
             perror("DQ'd lifter must not have a TotalKg. Row: %s" % row)
 
 
-<<<<<<< HEAD
 #Checks that athletes of the wrong sex are not in a single-sex weight class
 def check_row_weightclass_sex(row,csv):
 
@@ -492,24 +491,6 @@ def check_row_weightclass_sex(row,csv):
         pwarning("Lifter \"%s\" sex (%s) does not match WtCls (%s)" %
                         (row[csv.index('Name')], row[csv.index('Sex')],
                          row[csv.index('WeightClassKg')]))
-=======
-#Checks that lifter sex matches lifter weight class
-def check_row_weightclass_sex(row,csv):
-    if not 'Sex' in csv.fieldnames or not 'WeightClassKg' in csv.fieldnames:
-        return
-    ipf_mens_classes = ['53','59','66','74','83','93','105','120','120+']
-    ipf_womens_classes = ['43','47','57','63','72','84','84+'] #Don't have -52 as this overlaps with a traditional class
-
-    trad_mens_only = ['100','110','125','125+']
-    trad_womens_only = ['44','48','90+']
-
-    if row[csv.index('Sex')] is 'M' and row[csv.index('WeightClassKg')] in ipf_womens_classes+trad_womens_only:
-            pwarning("Male lifter in female weight-class: %s %s kg" % (row[csv.index('Name')],row[csv.index('WeightClassKg')]))
-    #Not checking the traditional classes right now due to SPF,USPA etc
-    elif row[csv.index('Sex')] is 'F' and row[csv.index('WeightClassKg')] in ipf_mens_classes: 
-            pwarning("Female lifter in male weight-class: %s %s kg" % (row[csv.index('Name')],row[csv.index('WeightClassKg')]))
-
->>>>>>> ede0442565838f9b65e565afbc3d6e29e3e454dd
 
 # Women shouldn't accidentally be given male SHW classes.
 # Bodyweight should match the weight class.
@@ -725,7 +706,6 @@ def check_row(row, csv):
     check_row_lift_consistency(row, csv, 'BestDeadliftKg',
                                           ['Deadlift1Kg','Deadlift2Kg','Deadlift3Kg'])
 
-<<<<<<< HEAD
     check_row_lift_order(row, csv,['Squat1Kg','Squat2Kg','Squat3Kg','Squat4Kg'])
     check_row_lift_order(row, csv,['Bench1Kg','Bench2Kg','Bench3Kg','Bench4Kg'])
     check_row_lift_order(row, csv,['Deadlift1Kg','Deadlift2Kg','Deadlift3Kg','Deadlift4Kg'])
@@ -733,12 +713,6 @@ def check_row(row, csv):
     check_row_success_consistency(row, csv,['Squat1Kg','Squat2Kg','Squat3Kg','Squat4Kg'])
     check_row_success_consistency(row, csv,['Bench1Kg','Bench2Kg','Bench3Kg','Bench4Kg'])
     check_row_success_consistency(row, csv,['Deadlift1Kg','Deadlift2Kg','Deadlift3Kg','Deadlift4Kg'])
-=======
-
-    check_row_lift_order(row, csv,['Squat1Kg','Squat2Kg','Squat3Kg'])
-    check_row_lift_order(row, csv,['Bench1Kg','Bench2Kg','Bench3Kg'])
-    check_row_lift_order(row, csv,['Deadlift1Kg','Deadlift2Kg','Deadlift3Kg'])
->>>>>>> ede0442565838f9b65e565afbc3d6e29e3e454dd
 
     # Check individual cell values in isolation.
     for i, text in enumerate(row):
@@ -766,7 +740,7 @@ def check(scriptname, filename):
     reset_filename_state(filename)
 
     csv = oplcsv.Csv(filename)
-
+    print(filename)
     check_headers(csv)
 
     for row in csv.rows:
