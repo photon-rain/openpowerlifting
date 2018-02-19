@@ -607,18 +607,6 @@ def check_row_lift_consistency(row, csv, bestcol, attemptcols):
                (row[csv.index('Name')], bestcol, str(best), row[csv.index(bestcol)]))
 
 
-def check_row_lift_order(row, csv, attemptcols):
-    attempts = []
-    for col in attemptcols:
-        attempt = abs(float2(row[csv.index(col)])) if col in csv.fieldnames else 0.0
-        if attempt != 0.0:
-       		attempts.append(attempt)
-
-    if not (attempts == sorted(attempts)):
-     	pwarning("Attempts for \"%s\" in columns %s are not in ascending order" %
-            (row[csv.index('Name')],  ' '.join(str(x) for x in attempts)))
-
-
 
 def check_row_total_consistency(row, csv):
     if not 'TotalKg' in csv.fieldnames:
@@ -738,9 +726,9 @@ def check_row(row, csv):
 def check(scriptname, filename):
     # Pretty-printer helper (so we only print the name once).
     reset_filename_state(filename)
-
-    csv = oplcsv.Csv(filename)
     print(filename)
+    csv = oplcsv.Csv(filename)
+
     check_headers(csv)
 
     for row in csv.rows:
