@@ -112,7 +112,7 @@ DQ,Per-Ake Jonsson,1954,SWE,82.3,-180,-180,-180,,,,Masters 2,82.5,B,Single-ply,M
 10,Josef Micka,1949,CZE,97.7,140,-150,-150,,140,140,Masters 2,100,B,Single-ply,M
 DQ,Stanislas Couchy,1953,FRA,96.8,-190,-190,-195,,,,Masters 2,100,B,Single-ply,M
 1,Kari Vilppola,1955,FIN,109.5,220,-222.5,222.5,,222.5,222.5,Masters 2,110,B,Single-ply,M
-2,Greg Chrun,1951,USA,106.9,-220,-220,220,,220,220,Masters 2,110,B,Single-ply,M
+2,Chrun Greg,1951,USA,106.9,0.5939,-220,-220,220,220,,130.65,9
 3,Chikara Takada,1954,JPN,101.4,-190,190,-195,,190,190,Masters 2,110,B,Single-ply,M
 4,David Brooks,1952,GBR,109,190,-202.5,-202.5,,190,190,Masters 2,110,B,Single-ply,M
 5,Miroslav Koprnicky,1951,CAN,100.9,160,165,-170,,165,165,Masters 2,110,B,Single-ply,M
@@ -143,7 +143,11 @@ DQ,Ivan Zwick,1939,USA,66.3,-132.5,-132.5,-137.5,,,,Masters 3,67.5,B,Single-ply,
 2,Alexander Lee,1942,GBR,74.1,150,-160,160,,160,160,Masters 3,75,B,Single-ply,M
 3,Harald Peschl,1945,GER,74.8,145,-152.5,-152.5,,145,145,Masters 3,75,B,Single-ply,M
 4,Akira Kawashima,1936,JPN,70.9,-140,140,-145,,140,140,Masters 3,75,B,Single-ply,M
+<<<<<<< HEAD
 5,Hideo Kumakura,1936,JPN,74.1,-140,-140,140,,140,140,Masters 3,75,B,Single-ply,M
+=======
+5,Hideo Kumakura,1936,JPN,74.1,140,140,140,,140,140,Masters 3,75,B,Single-ply,M
+>>>>>>> ede0442565838f9b65e565afbc3d6e29e3e454dd
 6,Mike Lawson,1941,USA,71.8,115,122.5,132.5,,132.5,132.5,Masters 3,75,B,Single-ply,M
 7,Reynaldo Pascal-Casas,1944,FRA,73.3,132.5,-137.5,-137.5,,132.5,132.5,Masters 3,75,B,Single-ply,M
 1,Louis Escolano,1945,FRA,81.6,165,170,173,,173,173,Masters 3,82.5,B,Single-ply,M

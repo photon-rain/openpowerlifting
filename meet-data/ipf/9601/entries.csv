@@ -1,4 +1,4 @@
-Place,WeightClassKg,Sex,Division,Name,BirthYear,BodyweightKg,Country,BestSquatKg,BestBenchKg,BestDeadliftKg,TotalKg,Event,Equipment
+﻿Place,WeightClassKg,Sex,Division,Name,BirthYear,BodyweightKg,Country,BestSquatKg,BestBenchKg,BestDeadliftKg,TotalKg,Event,Equipment
 1,52,M,Open,Andrzei Stanaszek,1971,50.7,Poland,260,170,140,570,SBD,Single-ply
 2,52,M,Open,Yaros Tchopovskiy,1962,51.9,Russia,210,110,225,545,SBD,Single-ply
 3,52,M,Open,Hideaki Inaba,1944,51.8,Japan,220,92.5,225,537.5,SBD,Single-ply
@@ -56,14 +56,22 @@ DQ,60,M,Open,Phillip Richard,1971,59.2,Great Britain,225,,,,SBD,Single-ply
 20,67.5,M,Open,Richard Lettner,1974,67.3,Austria,215,152.5,210,577.5,SBD,Single-ply
 21,67.5,M,Open,Gennaiy Chetin,1943,66.9,Uzbekistan,120,130,120,370,SBD,Single-ply
 DQ,67.5,M,Open,Roberto Sacco,1975,66.4,Italy,225,120,,,SBD,Single-ply
+<<<<<<< HEAD
 DQ,67.5,M,Open,Deriswan,1967,66.6,Indonesia,250,,,,SBD,Single-ply
+=======
+DQ,67.5,M,Open, Deriswan,1967,66.6,Indonesia,250,,,,SBD,Single-ply
+>>>>>>> ede0442565838f9b65e565afbc3d6e29e3e454dd
 1,75,M,Open,Dan Austin,1958,75,USA,310,170,305,785,SBD,Single-ply
 2,75,M,Open,Per Berglund,1967,73.6,Sweden,305,192.5,280,777.5,SBD,Single-ply
 3,75,M,Open,I-Ching Hsieh,1971,74.3,Chinese Taipei,302.5,165,307.5,775,SBD,Single-ply
 4,75,M,Open,Dimitriy Soloviov,1970,74.6,Ukraina,300,192.5,277.5,770,SBD,Single-ply
 5,75,M,Open,Alexei Nemtsev,1975,74.7,Russia,297.5,185,272.5,755,SBD,Single-ply
 6,75,M,Open,Jarmo Laine,1966,74.6,Finland,300,177.5,275,752.5,SBD,Single-ply
+<<<<<<< HEAD
 7,75,M,Open,Arnaldo Rimoldi,1974,74.9,Italy,280,155,290,725,SBD,Single-ply
+=======
+7,75,M,Open,Arnaldo+ Rimoldi,1974,74.9,Italy,280,155,290,725,SBD,Single-ply
+>>>>>>> ede0442565838f9b65e565afbc3d6e29e3e454dd
 8,75,M,Open,Jan Wegiera,1965,74.3,Poland,280,180,260,720,SBD,Single-ply
 9,75,M,Open,Jan Theys,1963,75,Belgium,260,182.5,270,712.5,SBD,Single-ply
 10,75,M,Open,Pekka Antilla,1965,74.7,Finland,270,160,257.5,687.5,SBD,Single-ply
@@ -100,7 +108,11 @@ DQ,75,M,Open,Jan Sahlgren,1960,75,Denmark,,,,,SBD,Single-ply
 17,82.5,M,Open,Ivan Panchenko,1969,79.8,Ukraina,260,170,260,690,SBD,Single-ply
 18,82.5,M,Open,Robert Hromek,1971,81.9,Australia,250,155,270,675,SBD,Single-ply
 19,82.5,M,Open,Adrien Shnier,1964,82.5,Australia,225,170,260,655,SBD,Single-ply
+<<<<<<< HEAD
 20,82.5,M,Open,Stephen O'Mally,1971,78.5,Ireland,235,147.5,247.5,630,SBD,Single-ply
+=======
+20,82.5,M,Open,Stepehn O’Mally,1971,78.5,Ireland,235,147.5,247.5,630,SBD,Single-ply
+>>>>>>> ede0442565838f9b65e565afbc3d6e29e3e454dd
 21,82.5,M,Open,Silvio Bertoncely,1949,81.4,Slovenia,225,160,230,615,SBD,Single-ply
 22,82.5,M,Open,Manfred Sabathy,1961,81.9,Austria,210,170,210,590,SBD,Single-ply
 DQ,82.5,M,Open,Andreys-s Butenko,1975,81.6,Turkmenistan,230,160,,,SBD,Single-ply
@@ -178,5 +190,9 @@ DQ,125,M,Open,Victor Naleikin,1953,124.5,Ukraina,380,,,,SBD,Single-ply
 8,125+,M,Open,Chien-Hsiung Chao,1969,136.9,Chinese Taipei,360,215,297.5,872.5,SBD,Single-ply
 9,125+,M,Open,Michael Abdullah,1964,132,Australia,330,222.5,307.5,860,SBD,Single-ply
 10,125+,M,Open,Bernhard Rolle,1963,133.4,Bahamas,340,200,310,850,SBD,Single-ply
+<<<<<<< HEAD
 DQ,125+,M,Open,Cheng-Tsung Wu,1972,158.4,Chinese Taipei,350,,,,SBD,Single-ply
+=======
+11,125+,M,Open,Cheng-Tsung Wu,1972,158.4,Chinese Taipei,350,,,,SBD,Single-ply
+>>>>>>> ede0442565838f9b65e565afbc3d6e29e3e454dd
 DQ,125+,M,Open,Sean Culnan,1967,144.2,USA,,,,,SBD,Single-ply

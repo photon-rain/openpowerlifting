@@ -20,7 +20,7 @@ Place,WeightClassKg,Sex,Division,Name,BirthYear,BodyweightKg,Country,Bench1Kg,Be
 6,60,F,Master 1,Doris Jawinski,1955,59.1,Germany,70,75,,75,75,B,Single-ply
 1,67.5,F,Master 1,Yvonne v. Stoep,1960,66.7,Netherlands,97.5,102.5,110,110,110,B,Single-ply
 2,67.5,F,Master 1,Christian DiPrata,1957,61.9,France,90,92.5,95,95,95,B,Single-ply
-3,67.5,F,Master 1,Ursula HÃ¤user,1960,66.2,Germany,87.5,92.5,95,95,95,B,Single-ply
+3,67.5,F,Master 1,Ursula Häuser,1960,66.2,Germany,87.5,92.5,95,95,95,B,Single-ply
 4,67.5,F,Master 1,Evelyne Herbin,1956,66.1,France,82.5,-87.5,-92.5,82.5,82.5,B,Single-ply
 5,67.5,F,Master 1,Maureen Post,1957,66.6,US.America,75,-85,-85,75,75,B,Single-ply
 6,67.5,F,Master 1,Anita Fixemer,1954,66.8,Luxembourg,50,55,57.5,57.5,57.5,B,Single-ply
@@ -61,15 +61,15 @@ Place,WeightClassKg,Sex,Division,Name,BirthYear,BodyweightKg,Country,Bench1Kg,Be
 4,75,F,Master 2,Denise Quellet,1943,73.2,Canada,55,-60,-65,55,55,B,Single-ply
 1,82.5,F,Master 2,Roswit Pittermann,1946,81.6,Germany,107.5,112.5,-117.5,112.5,112.5,B,Single-ply
 1,52,M,Master 1,Hiroyu Ishiwatari,1959,51.2,Japan,-130,130,140,140,140,B,Single-ply
-1,56,M,Master 1,Yutaka Yamashita,1959,52.6,Japan,115,-120,120,120,120,B,Single-ply
+1,56,M,Master 1,Yutaka Yamashita,1959,52.6,Japan,115,120,120,120,120,B,Single-ply
 2,56,M,Master 1,Czeslaw Kedziora,1951,55.8,Poland,105,112.5,-115,112.5,112.5,B,Single-ply
-3,56,M,Master 1,Matthias FrÃ¶hlich,1960,52.3,Germany,105,110,-120,110,110,B,Single-ply
+3,56,M,Master 1,Matthias Fröhlich,1960,52.3,Germany,105,110,-120,110,110,B,Single-ply
 4,56,M,Master 1,Josef Fenzl,1960,54.7,Austria,57.5,62.5,67.5,67.5,67.5,B,Single-ply
 1,60,M,Master 1,John Corsello,1958,58.99,US.America,120,125,130,130,130,B,Single-ply
 2,60,M,Master 1,Henry Hellmich,1956,59.3,Germany,120,125,-130,125,125,B,Single-ply
-3,60,M,Master 1,Pauli TÃ¶llikkÃ¶,1957,58.6,Finland,95,100,-102.5,100,100,B,Single-ply
-DQ,60,M,Master 1,Istvan Toth,1956,57.9,Hungary,130,140,145,145,,B,Single-ply
-1,67.5,M,Master 1,Pekka KihlstrÃ¶m,1959,66.1,Sweden,-147.5,-147.5,150,150,150,B,Single-ply
+3,60,M,Master 1,Pauli Töllikkö,1957,58.6,Finland,95,100,-102.5,100,100,B,Single-ply
+DQ,60,M,Master 1,Istvan Toth,1956,57.9,Hungary,130,140,145,,,B,Single-ply
+1,67.5,M,Master 1,Pekka Kihlström,1959,66.1,Sweden,-147.5,-147.5,150,150,150,B,Single-ply
 2,67.5,M,Master 1,Hartmut Glaue,1959,66.2,Germany,140,145,147.5,147.5,147.5,B,Single-ply
 3,67.5,M,Master 1,Mirza Zia,1957,64.8,Great Britain,137.5,142.5,145,145,145,B,Single-ply
 DQ,67.5,M,Master 1,Peter Muigg,1958,66.5,Austria,-145,-145,-147.5,,,B,Single-ply
@@ -95,7 +95,7 @@ DQ,67.5,M,Master 1,Peter Muigg,1958,66.5,Austria,-145,-145,-147.5,,,B,Single-ply
 6,90,M,Master 1,Harri Hagfors,1961,89,Finland,172.5,180,185,185,185,B,Single-ply
 7,90,M,Master 1,Per Berndorf,1960,89.6,Denmark,152.5,165,172.5,172.5,172.5,B,Single-ply
 8,90,M,Master 1,Conny Andersson,1959,88.2,Sweden,-170,170,,170,170,B,Single-ply
-9,90,M,Master 1,Frank ReiÃ¡,1956,88.3,Germany,-150,150,-165,150,150,B,Single-ply
+9,90,M,Master 1,Frank Reiá,1956,88.3,Germany,-150,150,-165,150,150,B,Single-ply
 1,100,M,Master 1,Jerzy Furmanek,1952,97.4,Poland,225,-235,245,245,245,B,Single-ply
 2,100,M,Master 1,Jean-Pierre Aymon,1954,99.2,Switzerland,210,-217.5,217.5,217.5,217.5,B,Single-ply
 3,100,M,Master 1,Yoshiuki Hanada,1955,99.2,Japan,205,-210,-210,205,205,B,Single-ply
@@ -104,7 +104,7 @@ DQ,67.5,M,Master 1,Peter Muigg,1958,66.5,Austria,-145,-145,-147.5,,,B,Single-ply
 6,100,M,Master 1,Karel Kuipers,1958,95.6,Netherlands,-170,170,180,180,180,B,Single-ply
 7,100,M,Master 1,John Brooks,1955,96.9,Great Britain,180,-190,-195,180,180,B,Single-ply
 8,100,M,Master 1,Roger Piron,1960,94.3,Luxembourg,165,-170,-170,165,165,B,Single-ply
-9,100,M,Master 1,SÃ¶ren Bertelsen,1961,98.6,Denmark,160,-167.5,-167.5,160,160,B,Single-ply
+9,100,M,Master 1,Sören Bertelsen,1961,98.6,Denmark,160,-167.5,-167.5,160,160,B,Single-ply
 10,100,M,Master 1,Bogdan Hladin,1959,99.7,Ukraina,145,-152.5,-152.5,145,145,B,Single-ply
 1,110,M,Master 1,Wieslaw Kruk,1958,109.7,Poland,-257.5,-257.5,257.5,257.5,257.5,B,Single-ply
 2,110,M,Master 1,Mark Maher,1954,102.2,US.America,230,237.5,-245,237.5,237.5,B,Single-ply
@@ -145,7 +145,7 @@ DQ,56,M,Master 2,Joachim Lietzau,1950,55.8,Germany,-100,-100,-115,,,B,Single-ply
 3,60,M,Master 2,Burkhard Steffen,1950,59.8,Germany,95,105,-112.5,105,105,B,Single-ply
 4,60,M,Master 2,Bent Hansen,1941,59.2,Denmark,75,80,85,85,85,B,Single-ply
 1,67.5,M,Master 2,Jozsef Kapor,1951,67.4,Hungary,135,140,-145,140,140,B,Single-ply
-2,67.5,M,Master 2,BÃ¶rje Eriksson,1942,65.7,Sweden,135,-140,-140,135,135,B,Single-ply
+2,67.5,M,Master 2,Börje Eriksson,1942,65.7,Sweden,135,-140,-140,135,135,B,Single-ply
 3,67.5,M,Master 2,Juha Inkinen,1948,66.9,Finland,130,135,-142.5,135,135,B,Single-ply
 4,67.5,M,Master 2,Jacques Bette,1950,66.4,France,130,-135,-137.5,130,130,B,Single-ply
 5,67.5,M,Master 2,Jules Pellegrino,1943,67.1,US.America,117.5,130,-137.5,130,130,B,Single-ply
@@ -164,24 +164,24 @@ DQ,56,M,Master 2,Joachim Lietzau,1950,55.8,Germany,-100,-100,-115,,,B,Single-ply
 2,82.5,M,Master 2,Paananen Taisto,1948,80.9,Finland,170,180,185,185,185,B,Single-ply
 3,82.5,M,Master 2,Veikko Sliden,1948,80.9,Finland,165,175,-180,175,175,B,Single-ply
 4,82.5,M,Master 2,Joseph Guerrero,1943,79.6,France,150,160,165,165,165,B,Single-ply
-5,82.5,M,Master 2,JÃ¼rgen Gross,1945,80.9,Germany,150,155,-157.5,155,155,B,Single-ply
+5,82.5,M,Master 2,Jürgen Gross,1945,80.9,Germany,150,155,-157.5,155,155,B,Single-ply
 6,82.5,M,Master 2,Daniel Reybroeck,1942,80.8,Belgium,122.5,130,-137.5,130,130,B,Single-ply
 7,82.5,M,Master 2,Karel Olic,1947,81.3,Czechia,125,130,-137.5,130,130,B,Single-ply
 8,82.5,M,Master 2,Kari Mattila,1949,81.6,Sweden,115,-125,125,125,125,B,Single-ply
 1,90,M,Master 2,Tadashi Tachibana,1949,88.9,Japan,185,192.5,200,200,200,B,Single-ply
 2,90,M,Master 2,Dave Cummerow,1948,86.5,US.America,165,170,177.5,177.5,177.5,B,Single-ply
-3,90,M,Master 2,Hans-JÃ¼rg Pietsch,1948,85.77,Germany,170,175,-177.5,175,175,B,Single-ply
+3,90,M,Master 2,Hans-Jürg Pietsch,1948,85.77,Germany,170,175,-177.5,175,175,B,Single-ply
 4,90,M,Master 2,Tilman Gallant,1948,85.8,Canada,160,-170,170,170,170,B,Single-ply
 5,90,M,Master 2,Lucien Chonckel,1941,85.4,France,155,160,-162.5,160,160,B,Single-ply
-6,90,M,Master 2,Bo EklÃ¶f,1944,86.1,Sweden,130,-137.5,137.5,137.5,137.5,B,Single-ply
+6,90,M,Master 2,Bo Eklöf,1944,86.1,Sweden,130,-137.5,137.5,137.5,137.5,B,Single-ply
 7,90,M,Master 2,Ketil Hodne,1947,85.6,Norwegen,122.5,127.5,130,130,130,B,Single-ply
 1,100,M,Master 2,Henryk Szymanski,1947,94.7,Poland,170,180,-200,180,180,B,Single-ply
 2,100,M,Master 2,Josef Hermann,1946,97.2,Germany,170,,-175,170,170,B,Single-ply
-3,100,M,Master 2,RÃ¼diger SchrÃ¶r,1943,98.2,Germany,167.5,170,-172.5,170,170,B,Single-ply
+3,100,M,Master 2,Rüdiger Schrör,1943,98.2,Germany,167.5,170,-172.5,170,170,B,Single-ply
 4,100,M,Master 2,Gatse Wouda,1948,93.2,Netherlands,-155,165,-170,165,165,B,Single-ply
 5,100,M,Master 2,Akio Fujimoto,1949,94.7,Japan,160,165,-170,165,165,B,Single-ply
 6,100,M,Master 2,Yvan DeWitte,1946,92.4,Belgium,137.5,145,-150,145,145,B,Single-ply
-1,110,M,Master 2,GyÃ¶rgy Lovasz,1950,109.1,Hungary,200,205,207.5,207.5,207.5,B,Single-ply
+1,110,M,Master 2,György Lovasz,1950,109.1,Hungary,200,205,207.5,207.5,207.5,B,Single-ply
 2,110,M,Master 2,Fred Anneese,1947,108.4,Netherlands,175,185,192.5,192.5,192.5,B,Single-ply
 3,110,M,Master 2,Philippe Renvoize,1948,106,France,180,190,-192.5,190,190,B,Single-ply
 4,110,M,Master 2,Niilo Maliniemi,1946,108.7,Sweden,190,-200,-200,190,190,B,Single-ply
@@ -196,7 +196,7 @@ DQ,110,M,Master 2,Seppo Mikkola,1950,109.2,Finland,200,205,210,210,,B,Single-ply
 3,125,M,Master 2,Esa Leskinen,1950,110.5,Finland,-200,-200,200,200,200,B,Single-ply
 4,125,M,Master 2,Alain Hammang,1950,116.6,Luxembourg,187.5,192.5,-202.5,192.5,192.5,B,Single-ply
 5,125,M,Master 2,Karl Weber,1950,113.3,Germany,170,180,-192.5,180,180,B,Single-ply
-6,125,M,Master 2,Georg BostrÃ¶m,1947,119.8,Sweden,115,130,,130,130,B,Single-ply
+6,125,M,Master 2,Georg Boström,1947,119.8,Sweden,115,130,,130,130,B,Single-ply
 1,125+,M,Master 2,Colin Bonneau,1947,127.5,Canada,192.5,-205,205,205,205,B,Single-ply
 2,125+,M,Master 2,Karl-Heinz Voscul,1949,139.6,Germany,182.5,192.5,-197.5,192.5,192.5,B,Single-ply
 3,125+,M,Master 2,Erkki Tuomikoski,1947,127.6,Finland,180,-190,-197.5,180,180,B,Single-ply
@@ -219,11 +219,11 @@ DQ,110,M,Master 2,Seppo Mikkola,1950,109.2,Finland,200,205,210,210,,B,Single-ply
 3,82.5,M,Master 3,Jose Lui Martinez,1939,81.6,Spain,142.5,-147.5,150,150,150,B,Single-ply
 4,82.5,M,Master 3,Joe McDermott,1940,81.9,US.America,142.5,147.5,-155,147.5,147.5,B,Single-ply
 5,82.5,M,Master 3,Wolfgang Kolditz,1940,81.7,Germany,-95,95,-100,95,95,B,Single-ply
-1,90,M,Master 3,GÃ¼nthe Wittkowski,1940,88.5,Germany,155,160,165,165,165,B,Single-ply
+1,90,M,Master 3,Günthe Wittkowski,1940,88.5,Germany,155,160,165,165,165,B,Single-ply
 2,90,M,Master 3,Dennis Ballen,1940,88.9,US.America,152.5,160,-165,160,160,B,Single-ply
 3,90,M,Master 3,Vincenzo Palazzo,1940,87.3,Belgium,137.5,142.5,-145,142.5,142.5,B,Single-ply
 4,90,M,Master 3,Rene Ulrich,1939,87.9,Switzerland,130,137.5,-140,137.5,137.5,B,Single-ply
-5,90,M,Master 3,Josef PohlkÃ¶tter,1937,88.1,Germany,130,-135,-135,130,130,B,Single-ply
+5,90,M,Master 3,Josef Pohlkötter,1937,88.1,Germany,130,-135,-135,130,130,B,Single-ply
 6,90,M,Master 3,Rune Andersson,1940,87.4,Sweden,-107.5,110,112.5,112.5,112.5,B,Single-ply
 1,100,M,Master 3,Roland Schubert,1940,97.7,Germany,190,195,200,200,200,B,Single-ply
 2,100,M,Master 3,Maurice Cuvelier,1940,98.2,France,160,170,172.5,172.5,172.5,B,Single-ply
@@ -238,7 +238,7 @@ DQ,110,M,Master 2,Seppo Mikkola,1950,109.2,Finland,200,205,210,210,,B,Single-ply
 4,110,M,Master 3,Hans Frese,1940,107.5,Germany,165,170,-177.5,170,170,B,Single-ply
 5,110,M,Master 3,Klaus Weber,1935,106.3,Germany,-160,160,-170,160,160,B,Single-ply
 6,110,M,Master 3,Joe Yanovitch,1932,108.2,US.America,140,147.5,-162.5,147.5,147.5,B,Single-ply
-7,110,M,Master 3,Riku SuonpÃ¤Ã¤,1940,108.3,Finland,140,-150,-150,140,140,B,Single-ply
+7,110,M,Master 3,Riku Suonpää,1940,108.3,Finland,140,-150,-150,140,140,B,Single-ply
 8,110,M,Master 3,Sheldon Levy,1930,103.6,US.America,100,105,-112.5,105,105,B,Single-ply
 1,125,M,Master 3,Mauno Kontto,1941,123.4,Finland,180,190,200,200,200,B,Single-ply
 2,125,M,Master 3,Peter Schwarz,1940,122,Germany,180,190,197.5,197.5,197.5,B,Single-ply

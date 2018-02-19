@@ -65,10 +65,6 @@ do
 
 	# Birth year sometimes has a question mark
 	sed -i -e 's/,?,/,,/g' "results"${r_nums[$((ii-2))]}".csv"
-<<<<<<< 1e6a0a53f09dfbcfecc39507c8c469aa733a5930
-
-=======
->>>>>>> Added 2006 results
 
 	# Disqualifications use ascii 0x97, a long dash.
 	sed -i -e 's/\x97/DQ/g' "results"${r_nums[$((ii-2))]}".csv"	
