@@ -1,0 +1,107 @@
+#!/usr/bin/env python3
+# vim: set ts=8 sts=4 et sw=4 tw=99:
+#
+# Simple check script for lifter-data/social-media.csv
+# and assorted files that get compiled into "lifters.csv".
+#
+# Used as part of "make check".
+#
+
+import sys,os
+import oplcsv
+import csv
+from usernames import get_username
+
+num_dimins =0
+pseudonyms=[]
+
+def enyellow(s):
+    if os.name != 'nt':
+        return "\033[1;33m" + s + "\033[0;m"
+    else: 
+        return s
+hitError = False  # Determines return value at end.
+
+def pwarning(s):
+    print(' ' + enyellow(s), file=sys.stderr)
+
+
+def is_ascii(s):
+    return len(s) == len(s.encode())
+
+
+def get_database_nameset():
+    names = set()
+
+    for dirname, subdirs, files in os.walk(os.getcwd()):
+        if not 'entries.csv' in files:
+            continue
+
+        csv = oplcsv.Csv(dirname + os.sep + 'entries.csv')
+        if 'Name' in csv.fieldnames:
+            nameidx = csv.index('Name')
+            for row in csv.rows:
+                names.add(row[nameidx])
+
+    return names
+
+#Check to see if we have a diminutive for this name
+def get_disambig_names(name):
+    filename = 'pseudonyms.dat'
+    path = os.path.join(os.path.dirname(os.path.realpath(__file__)),filename)
+    with open(path, 'r') as f:
+        reader = csv.reader(f, delimiter=',')
+        for row in reader:
+            if len(row)> 0 and row[0] == name:
+                disambigs =row
+                disambigs.remove(name)
+                return disambigs
+
+    return []
+
+
+# Check (Name => Username) automatic compilation for duplicate entries.
+# Duplicates need to be eliminated by forcibly overriding a name.
+def check_diminutive_names(names):
+    global num_dimins
+
+    usernames = dict()
+    for name in names:
+        split_names = name.split(' ')
+        if len(split_names) > 1 and len(split_names[1])>1: #Don't check single names and names with only last intials
+            firstname = get_username(split_names[0])
+            othernames = get_username(''.join(split_names[1:]))
+            name_disambigs = get_disambig_names(firstname)
+
+            found_disambig = False
+            if name_disambigs !=[]:
+                alt_names = [alt_first + othernames for alt_first in name_disambigs]
+                for alt_username in alt_names:
+                    if alt_username in usernames:
+                        pwarning("Possible pseudonym: %s %s" % (name,usernames[alt_username]))
+                        num_dimins+=1
+                        found_disambig=True                  
+
+            if not found_disambig:
+                usernames[get_username(name)] =  name 
+
+
+
+def main():
+    global hitError
+    
+    # Get a list of all the Name entries throughout the whole project.
+    names = get_database_nameset()
+
+    check_diminutive_names(names)
+    print("%d possible pseudonyms found" % num_dimins)
+
+    if hitError:
+        return 1
+    return 0
+
+if __name__ == '__main__':
+    if len(sys.argv) != 1:
+        print(" Usage: %s" % sys.argv[0])
+        sys.exit(1)
+    sys.exit(main())
