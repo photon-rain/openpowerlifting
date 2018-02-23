@@ -46,7 +46,7 @@ def get_database_nameset():
     return names
 
 #Check to see if we have a diminutive for this name
-def get_disambig_names(name):
+def get_pseudonyms(name):
     filename = 'pseudonyms.dat'
     path = 'lifter-data' + os.sep + filename
     with open(path, 'r') as f:
@@ -60,9 +60,8 @@ def get_disambig_names(name):
     return []
 
 
-# Check (Name => Username) automatic compilation for duplicate entries.
-# Duplicates need to be eliminated by forcibly overriding a name.
-def check_diminutive_names(names):
+# Check if there are any lifters with meets under pseudonyms
+def check_pseudonyms(names):
     global num_dimins
 
     usernames = dict()
@@ -71,7 +70,7 @@ def check_diminutive_names(names):
         if len(split_names) > 1 and len(split_names[1])>1: #Don't check single names and names with only last intials
             firstname = get_username(split_names[0])
             othernames = get_username(''.join(split_names[1:]))
-            name_disambigs = get_disambig_names(firstname)
+            name_disambigs = get_pseudonyms(firstname)
 
             found_disambig = False
             if name_disambigs !=[]:
@@ -93,7 +92,7 @@ def main():
     # Get a list of all the Name entries throughout the whole project.
     names = get_database_nameset()
 
-    check_diminutive_names(names)
+    check_pseudonyms(names)
     print("%d possible pseudonyms found" % num_dimins)
 
     if hitError:
