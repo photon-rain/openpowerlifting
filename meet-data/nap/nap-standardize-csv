@@ -4,7 +4,7 @@
 
 import sys
 
-sys.path.append('../../../scripts')
+sys.path.append('../../scripts')
 sys.path.append('scripts')
 import oplcsv
 import re
@@ -51,12 +51,12 @@ def parse_sheetname(s):
 
     s= s.replace('.',' ').replace('"','').replace('_',' ').replace('(',' ').replace(')',' ')
     s = s.replace(' & ','&')
-
+    s = s.replace('лист','') #Sheet
     for word in s.split():
  
 
         # Events
-        if word in ['пл','пауэрлифтинг','pl','пауэрифтинг','пауэлифтинг','ча-пл','ка-пл','паурлифтинг']:
+        if word in ['пл','пауэрлифтинг','pl','пауэрифтинг','пауэлифтинг','ча-пл','ка-пл','паурлифтинг','троеборье']:
             assert not event
             event = 'SBD'
         elif word == 'присед' or word == 'sq':
@@ -145,6 +145,10 @@ def parse_sheetname(s):
             pass
         elif word =='поток': #Event?
             pass
+        elif word =='абсолютка': #Results I think
+            pass
+        elif word =='лёжа': #Press
+            pass
         elif word.isdigit():
             pass
         else:
@@ -168,16 +172,41 @@ def get_header_linenum(sheet):
                 return ii
     die("get_header_linenum() failed to find the header.")
 
-#Sometimes we get country/city/state instead of just country
-def split_country(csv):
-    if 'Country/City/State' in csv.fieldnames:
-        idx = csv.index('Country/City/State')
-        for row in csv.rows:
-            parts = row[idx].split('/')
 
-            row[idx] = parts[0]
-        csv.fieldnames[idx] = 'Country'
 
+# Header is two merged rows, recombine these back into one row here
+def fix_headers(sheet):
+    headernum=get_header_linenum(sheet)
+    header = sheet[headernum]
+
+    lineabove = sheet[headernum-1] #Need some error checking here
+    linebelow = sheet[headernum+1]
+
+    #Name has split below rest of data
+    if header[0] == '' and lineabove[0] != '':
+        header = [(lineabove[ii]+" "+header[ii]).strip() for ii in range(0,len(header))]
+        sheet[headernum] =['' for x in header]
+        headernum=headernum-1
+    elif header[0] == '' and linebelow[0] != '':
+        header = [(header[ii]+" "+linebelow[ii]).strip() for ii in range(0,len(header))]
+        sheet[headernum-1] =['' for x in linebelow]
+    elif header[0] != '' and linebelow[0] =='':
+        header = [(header[ii]+" "+linebelow[ii]).strip() for ii in range(0,len(header))]
+        sheet[headernum-1] =['' for x in linebelow]
+    elif header[0] != '' and lineabove[0] =='' and not is_division(''.join(lineabove)):
+        header = [(lineabove[ii] +" "+header[ii]).strip() for ii in range(0,len(header))]
+        sheet[headernum-1] =['' for x in lineabove]
+
+    sheet[headernum]=header
+
+    return sheet
+
+
+#Used for merging header lines correctly
+def is_division(text):
+    if 'категория' in text.lower():
+        return True
+    return False
 
 
 
@@ -202,9 +231,9 @@ def parse_fieldnames(sheet,obj):
             fieldnames.append('Age')
         elif 'дата' in text: #Catch all for birthyear 
             fieldnames.append('BirthYear')
-        elif text in ['собств вес','собств','соб','вес','собственный вес','собственный','body weight','собcтвенный вес','собст вес','соб вес','собстввес','вага','св','в/к']:
+        elif text in ['собств вес','собств','соб','вес','собственный вес','собственный','body weight','собcтвенный вес','собст вес','соб вес','собстввес','вага','св']:
             fieldnames.append('BodyweightKg')
-        elif text in ['весовая категория','весовая кат']:
+        elif text in ['весовая категория','весовая кат','в/к']:
             fieldnames.append('WeightClassKg')
         elif text == 'team':
             fieldnames.append('Team')
@@ -214,9 +243,9 @@ def parse_fieldnames(sheet,obj):
             fieldnames.append('IGNORE')
         elif 'город' in text or 'регіон' in text:
             fieldnames.append('IGNORE') # We don't care about city-level information.
-        elif text == 'сountry/city/state' or text =='страна/город/область':
+        elif text == 'сountry/city/state' or text =='страна/город/область' or text =='регион':
             fieldnames.append('Country/City/State')
-        elif text =='итог': #This is place, they only give top three so recalculate
+        elif text =='итог' or text =='место' or text =='абсолютное первенство': #This is place, they only give top three so recalculate
             fieldnames.append('IGNORE')
         elif text =='пол': 
             fieldnames.append('Sex')
@@ -226,6 +255,8 @@ def parse_fieldnames(sheet,obj):
             fieldnames.append('Division')
         elif text =='дк':
             fieldnames.append('Tested')
+        elif text == 'сумма subtotal':
+            fieldnames.append('IGNORE')
 
 
 
@@ -235,7 +266,7 @@ def parse_fieldnames(sheet,obj):
             fieldnames.append('Squat1Kg')
             fieldnames.append('Squat2Kg')
             fieldnames.append('Squat3Kg')
-            if  header[i+3].lower().replace('.','') in ['рек','rec','sq4','4 присед']:
+            if  header[i+3].lower().replace('.','') in ['рек','rec','sq4','4 присед','4']:
                 fieldnames.append('Squat4Kg')
                 [next(iterable) for x in range(3)]
             else:
@@ -247,7 +278,7 @@ def parse_fieldnames(sheet,obj):
             fieldnames.append('Bench1Kg')
             fieldnames.append('Bench2Kg')
             fieldnames.append('Bench3Kg')
-            if  header[i+3].lower().replace('.','') in ['рек','rec','bp4','4 жим']:
+            if  header[i+3].lower().replace('.','') in ['рек','rec','bp4','4 жим','4']:
                 fieldnames.append('Bench4Kg')
                 [next(iterable) for x in range(3)]
             else:
@@ -259,7 +290,7 @@ def parse_fieldnames(sheet,obj):
             fieldnames.append('Deadlift1Kg')
             fieldnames.append('Deadlift2Kg')
             fieldnames.append('Deadlift3Kg')
-            if  header[i+3].lower().replace('.','') in ['рек','rec','dl4','4 тяга']:
+            if  header[i+3].lower().replace('.','') in ['рек','rec','dl4','4 тяга','4']:
                 fieldnames.append('Deadlift4Kg')
                 [next(iterable) for x in range(3)]
             else:
@@ -297,11 +328,11 @@ def parse_fieldnames(sheet,obj):
 
 
 
-        elif text in ['сумма','total','result','сумма баллов','резульат','результат bp','результат']:
+        elif text in ['сумма','total','result','сумма баллов','резульат','результат bp','результат','рез-тат','итог сумма']:
             fieldnames.append('TotalKg')
 
-
-        elif text in['wilks','wpoints','willks','очки','points','vilks','вилкс','абс']: # This is the Wilks. But we prefer to re-calculate it ourselves.
+        #Wilks/Schwartz/Gloss/Some other coefficient
+        elif text.replace(' ','') in['wilks','wpoints','willks','очки','points','vilks','вилкс','абс','шварц/мелоун','шварц']:
             fieldnames.append('IGNORE')
 
         elif text == 'тренер':
@@ -333,9 +364,8 @@ def parse_sheet(sheet):
     # Ignore some sheets that don't contain any powerlifting.
     if 'судейская кол' in title:
         return csv
-    elif 'нж' in title or 'народный' in title:
-        # This is the "People's Bench", which I think is bench-for-reps.
-        return csv
+    elif 'нж' in title or 'народный' in title or 'русский' in title:
+        return csv #Rep bench
     elif 'командный зачет' in title:
         return csv #Team results
     elif 'командное первенство' in title:
@@ -344,7 +374,7 @@ def parse_sheet(sheet):
         return csv
     elif any(x in title for x in ['корпус','судейски','командный зачёт','абсолютный','судейство']): #Results
         return csv
-    elif 'records' in title or 'рекорды' in title:
+    elif 'records' in title or 'рекорды' in title or 'командное' in title or 'тренерское' in title:
         return csv
     elif 'крж' in title: #??
         return csv
@@ -352,24 +382,36 @@ def parse_sheet(sheet):
         return csv
     elif 'участников' in title: #Participants
         return csv
+    elif 'абсолютка' in title: #Not sure what this is
+        return csv
+    elif 'армлифтинг' in title: #Armlifting
+        return csv
 
 
     # Figure out event, equipment, etc., and store in obj.
     obj = parse_sheetname(sheet[0][0].split(':')[1])
 
 
+    #NAP often splits headers across multiple lines,fix this
+    sheet = fix_headers(sheet)
 
     # Look through the sheet for column information and mark up the CSV.
     # All columns are given a name -- the extra ones are removed later.
     csv.fieldnames = parse_fieldnames(sheet,obj)
 
+    append_equip = False
+    append_div = False
 
     assert not 'Event' in csv.fieldnames
     csv.fieldnames.append('Event')
-    assert not 'Equipment' in csv.fieldnames
-    csv.fieldnames.append('Equipment')
+    if not 'Equipment' in csv.fieldnames:
+        csv.fieldnames.append('Equipment')
+        append_equip = True
+
     csv.fieldnames.append('Amateur')
-    csv.fieldnames.append('Division')
+    if not 'Division' in csv.fieldnames:
+        csv.fieldnames.append('Division')
+        append_div = True
 
     division = None
 
@@ -399,7 +441,7 @@ def parse_sheet(sheet):
 
 
         #Detect lines that set division
-        if 'категория' in text:
+        if is_division(text):
             division = text
             continue
 
@@ -411,12 +453,23 @@ def parse_sheet(sheet):
             continue
 
 
-            line[totalidx] = str(max(weight(line[idx1]), weight(line[idx2]), weight(line[idx3])))
-
         line.append(obj['event'])
-        line.append(obj['equipment'])
         line.append(obj['amateur'])
-        line.append(division)
+
+
+        if append_equip or (line[csv.index('Equipment')] == '' and obj['equipment'] != None):
+            if not append_equip:
+                line[csv.index('Equipment')] = obj['equipment']
+            else:
+                line.append(obj['equipment'])
+
+        if append_div or (line[csv.index('Division')] == '' and division != None):
+            if not append_div:
+                line[csv.index('Division')] = division
+            else:
+                line.append(division)
+
+
         assert len(line) == len(csv.fieldnames)
         csv.rows.append(line)
 
@@ -468,8 +521,41 @@ def standardize_division(csv):
             division = 'Teen under 15'
         elif 'девушки' in row[dividx]:
             division = 'Women'
+
+        elif 'юниоры' in row[dividx] or 'юноши' in row[dividx]or 'junior' in row[dividx]:
+            division = 'Juniors'
+        elif 'м1' in row[dividx]:
+            division = 'Masters 1'
+        elif 'masters 40-44' in row[dividx]:
+            division = 'Masters 40-44'
+        elif 'м2' in row[dividx]:
+            division = 'Masters 2'
+        elif 'masters 45-49' in row[dividx]:
+            division = 'Masters 45-49'
+        elif 'м3' in row[dividx]:
+            division = 'Masters 3'
+        elif 'masters 50-54' in row[dividx]:
+            division = 'Masters 50-54'
+        elif 'masters 55-59' in row[dividx]:
+            division = 'Masters 55-59'
+        elif 'м4' in row[dividx]:
+            division = 'Masters 4'
+        elif 'м5' in row[dividx]:
+            division = 'Masters 5'
+        elif 'masters 60-64' in row[dividx]:
+            division = 'Masters 60-64'
+        elif 'masters 65-69' in row[dividx]:
+            division = 'Masters 65-69'
+        elif 'masters 75-79' in row[dividx]:
+            division = 'Masters 75-79'
+        elif 'masters 80+' in row[dividx]:
+            division = 'Masters 80+'            
+        elif 'открытая' in row[dividx] or 'open' in row[dividx]:
+            division = 'Open'
+        elif row[dividx] =='':
+            division = 'Open'
         else:
-            die('Fix standardize_division_age(): Unknown division "%s"' % row[dividx])
+            die('Fix standardize_division(): Unknown division "%s"' % row[dividx])
 
         division = row[amateuridx] + ' ' + division
         row[dividx] = division.replace('  ',' ').strip()
@@ -539,8 +625,43 @@ def cleanup_weightclass(csv):
 def cleanup_bodyweight(csv):
     idx = csv.index('BodyweightKg')
     for row in csv.rows:
-        row[idx]=row[idx].split()[0]
+        if row[idx] != '':
+            row[idx]=row[idx].split()[0]
 
+#If an equipment column was given initially standardise it
+def cleanup_equipment(csv):
+    eqpidx = csv.index('Equipment')
+    for row in csv.rows:
+        if row[eqpidx].lower()=='raw':
+            row[eqpidx]='Raw'
+        elif row[eqpidx].lower() =='soft':
+            row[eqpidx]='Single-ply'
+
+#If sex was given standardise it
+def cleanup_sex(csv):
+    if 'Sex' in csv.fieldnames:
+        sexidx = csv.index('Sex')
+        for row in csv.rows:
+            if row[sexidx].lower()=='ж':
+                row[sexidx]='F'
+            elif row[sexidx].lower() =='м':
+                row[sexidx]='M'
+
+#If birthdate was given, keep only the year
+def cleanup_birthyear(csv):
+    if 'BirthYear' in csv.fieldnames:
+        byidx = csv.index('BirthYear')
+        for row in csv.rows:
+            row[byidx] = max(re.split('[. - /]',row[byidx]),key=len)
+
+def cleanup_tested(csv):
+    if 'Tested' in csv.fieldnames:
+        tstidx = csv.index('Tested')
+        for row in csv.rows:
+            if row[tstidx].lower()=='да':
+                row[tstidx]='Yes'
+            elif row[tstidx].lower() =='нет':
+                row[tstidx]='No'
 
 def assign_best(csv, liftname):
     idx1 = csv.index('%s1Kg' % liftname)
@@ -630,6 +751,10 @@ def main(filename):
     cleanup_names(csv)
     cleanup_weightclass(csv)
     cleanup_bodyweight(csv)
+    cleanup_equipment(csv)
+    cleanup_sex(csv)
+    cleanup_birthyear(csv)
+    cleanup_tested(csv)
 
     assign_total(csv)
 

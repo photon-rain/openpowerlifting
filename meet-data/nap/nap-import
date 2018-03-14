@@ -2,7 +2,7 @@
 
 set -e
 
-if [ $# -ne 2 ]; then
+if [ $# -ne 1 ]; then
 	echo " Usage: $0 dirname url"
 	exit 1
 fi
@@ -11,18 +11,18 @@ SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 REPOSCRIPTDIR="${SCRIPTDIR}/../../scripts"
 
 
-mkdir "$1"
-cd "$1"
+# mkdir "$1"
+# cd "$1"
 
 # Remember whether it's XLS or XLSX.
-EXTENSION="${2##*.}"
+EXTENSION="${1##*.}"
 
 # Download the website to results.xls(s)
-wget --output-document="results.${EXTENSION}" "$2"
+wget --output-document="results.${EXTENSION}" "$1"
 
 # Save the website URL for future use, since it's pretty hard to tell
 # what meets on the site are tracked and which aren't.
-echo "$2" > URL
+echo "$1" > URL
 
 # Convert the spreadsheet to HTML.
 # The spreadsheet will have multiple pages -- these will all be added to one document.
@@ -36,8 +36,12 @@ mv results.html tmp.xls
 #Remove red font colour in front of <s> tags
 sed -i -e 's/<s><font.*color="#FF0000">/-/g' tmp.xls
 sed -i -e 's/<font face=.*color="#FF0000">/-/g' tmp.xls
+sed -i -e 's/<font color="#FF0000">/-/g' tmp.xls
 sed -i -e 's/<\/font>//g' tmp.xls
 
+#Convert red background to fails
+sed -i -e 's/<font color="#000000">//g' tmp.xls
+sed -i -e 's/bgcolor="#FF0000".*sdnum="3081;">/sdnum="3081;">-/g' tmp.xls
 
 # Convert <s> to "-".
 sed -i -e 's/<s>/-/g' tmp.xls
@@ -62,9 +66,9 @@ sed -i -e 's/,-,/,,/g' results.csv
 sed -i -e 's/,-,/,,/g' results.csv
 
 
-# Clean up.
-if [ -f results.csv ]; then
-	rm tmp.xls results.${EXTENSION}
-fi
+# # Clean up.
+# if [ -f results.csv ]; then
+# 	rm tmp.xls results.${EXTENSION}
+# fi
 
 ${SCRIPTDIR}/nap-parse-post
