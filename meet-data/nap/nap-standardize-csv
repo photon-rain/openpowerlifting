@@ -94,7 +94,7 @@ def parse_sheetname(s):
         # Booleans.
         elif word == 'люб.' or word == 'любители':
             amateur = 'Amateur'
-        elif word == 'pro' or word == 'pro-':
+        elif word == 'pro' or word == 'pro-' or word =='про':
             assert amateur == 'Pro'
 
 
@@ -153,7 +153,6 @@ def parse_sheetname(s):
             pass
         else:
             die('Fix parse_sheetname(): Unknown word "%s" in "%s"' % (word, s))
-    assert event
 
     obj['event'] = event
     obj['amateur'] = amateur
@@ -174,9 +173,9 @@ def get_header_linenum(sheet):
 
 
 def is_header(line):
-    if 'ФИО' in line:
+    if 'ФИО' in line or 'фамилия и имя' in line:
         return True
-    return False	
+    return False    
 
 
 # Header is two merged rows, recombine these back into one row here
@@ -228,7 +227,7 @@ def parse_fieldnames(sheet,obj):
 
         if text == '№':
             fieldnames.append('IGNORE')
-        elif text == 'фио' or text =='имя' or 'прізвище' in text:
+        elif text == 'фио' or text =='имя' or 'прізвище' in text or 'фамилия и имя' in text:
             fieldnames.append('InternationalName')
         elif text == 'name':
             fieldnames.append('Name')
@@ -238,7 +237,7 @@ def parse_fieldnames(sheet,obj):
             fieldnames.append('BirthYear')
         elif text in ['собств вес','собств','соб','вес','собственный вес','собственный','body weight','собcтвенный вес','собст вес','соб вес','собстввес','вага','св']:
             fieldnames.append('BodyweightKg')
-        elif text in ['весовая категория','весовая кат','в/к']:
+        elif text in ['весовая категория','весовая кат','в/к','кат']:
             fieldnames.append('WeightClassKg')
         elif text == 'team':
             fieldnames.append('Team')
@@ -254,9 +253,9 @@ def parse_fieldnames(sheet,obj):
             fieldnames.append('IGNORE')
         elif text =='пол': 
             fieldnames.append('Sex')
-        elif text =='дивизион':
+        elif text =='вид': #'вид' columns are amateur/pro & equipment,parse this later
             fieldnames.append('Equipment')
-        elif text == 'возрастная категория':
+        elif text == 'возрастная категория' or text =='дивизион':
             fieldnames.append('Division')
         elif text =='дк':
             fieldnames.append('Tested')
@@ -333,7 +332,7 @@ def parse_fieldnames(sheet,obj):
 
 
 
-        elif text in ['сумма','total','result','сумма баллов','резульат','результат bp','результат','рез-тат','итог сумма']:
+        elif text in ['сумма','total','result','сумма баллов','резульат','результат bp','результат','рез-тат','итог сумма','максимум']:
             fieldnames.append('TotalKg')
 
         #Wilks/Schwartz/Gloss/Some other coefficient
@@ -411,6 +410,8 @@ def parse_sheet(sheet):
     assert not 'Event' in csv.fieldnames
     csv.fieldnames.append('Event')
 
+
+
     csv.fieldnames.append('Amateur')
 
 
@@ -431,8 +432,8 @@ def parse_sheet(sheet):
         csv.fieldnames.append('Sex')
         append_sex = True
 
-    division = 'Open' #Sometimes division is just not given, default to Open
-    sex = None
+    division = '' #Sometimes division is just not given
+    sex = ''
 
 
     #See if division is above the header
@@ -466,11 +467,23 @@ def parse_sheet(sheet):
 
         #Detect lines that set sex
         if 'женщины' in text.lower():
-        	sex = 'F'
-        	continue
+            sex = 'F'
+            continue
         elif 'мужчины' in text.lower():
-        	sex = 'M'
-        	continue
+            sex = 'M'
+            continue
+
+        #Detect lines that set equipment
+        if 'софт экип. любители' in text.lower():
+            equipment ='Multi-ply'
+            continue
+
+
+        #Detect lines that set pro/am
+        if 'про' in text.lower():
+            amateur = 'Pro'
+            continue
+
 
         # If we've made it this far, the line should be for a lifter!
         # Make sure they have a name!
@@ -493,13 +506,11 @@ def parse_sheet(sheet):
 
 
         if append_div:
-        	line.append(division)
-        else:
-            line[csv.index('Division')] = division
+            line.append(division)
                 
 
         if append_sex:
-        	line.append(sex)
+            line.append(sex)
 
 
 
@@ -511,6 +522,9 @@ def parse_sheet(sheet):
         csv.remove_column_by_name('IGNORE')
 
     unreverse_names(csv)
+    assign_event(csv)
+    cleanup_equipment(csv)
+
 
     return csv
 
@@ -538,7 +552,6 @@ def standardize_division(csv):
         row[dividx]=row[dividx].replace('жим','')
         row[dividx]=row[dividx].replace('лежа','')
 
-        
 
         row[dividx]=row[dividx].strip()
 
@@ -582,7 +595,14 @@ def standardize_division(csv):
         elif 'masters 75-79' in row[dividx]:
             division = 'Masters 75-79'
         elif 'masters 80+' in row[dividx]:
-            division = 'Masters 80+'            
+            division = 'Masters 80+'     
+
+        elif 'ветераны 40-44' in row[dividx]:
+            division = 'Veterans 40-44'
+        elif 'ветераны 45-49' in row[dividx]:
+            division = 'Veterans 45-49'
+
+
         elif 'открытая' in row[dividx] or 'open' in row[dividx]:
             division = 'Open'
         elif row[dividx] =='':
@@ -653,6 +673,7 @@ def cleanup_weightclass(csv):
     for row in csv.rows:
         if '.0' in row[idx]:
             row[idx] = row[idx].replace('.0','')
+        row[idx]=row[idx].replace('св.','')
 
 #Sometimes weight class is also given after bodyweight
 def cleanup_bodyweight(csv):
@@ -664,11 +685,22 @@ def cleanup_bodyweight(csv):
 #If an equipment column was given initially standardise it
 def cleanup_equipment(csv):
     eqpidx = csv.index('Equipment')
+    amidx = csv.index('Amateur')
     for row in csv.rows:
-        if row[eqpidx].lower()=='raw':
+        if 'raw' in row[eqpidx].lower():
             row[eqpidx]='Raw'
-        elif row[eqpidx].lower() =='soft':
+        elif 'soft' in row[eqpidx].lower() or 'одн' in row[eqpidx].lower():
             row[eqpidx]='Single-ply'
+        elif 'мн' in row[eqpidx].lower():
+            row[eqpidx]='Multi-ply'
+        elif 'слинг' in row[eqpidx].lower(): #Slingshot
+            row[eqpidx]='Multi-ply'
+
+
+        if 'amat' in row[eqpidx].lower():
+            row[amidx] ='Amateur'
+        elif 'pro' in row[eqpidx].lower():
+            row[amidx]='Pro'
 
 #If sex was given standardise it
 def cleanup_sex(csv):
@@ -740,6 +772,23 @@ def assign_total(csv):
             if total != 0.0:
                 row[idx] = str(total) 
 
+#Sometimes events aren't given in sheetnames or seperate headers, in this case try to deduce it from the title
+#Best to run this on a sheet by sheet basis
+def assign_event(csv):
+    eventidx = csv.index('Event')
+
+    event = ''
+    if 'Squat1Kg' in csv.fieldnames:
+        event += 'S'
+    elif 'Bench1Kg' in csv.fieldnames:
+        event += 'B'
+    elif 'Deadlift1Kg' in csv.fieldnames:
+        event += 'D'
+
+    if event != '':
+        for row in csv.rows:
+            if row[eventidx] ==None:
+                row[eventidx] = event
 
 def main(filename):
     # Since the input is comma-separated, store the file as a list of lists.
@@ -784,7 +833,6 @@ def main(filename):
     cleanup_names(csv)
     cleanup_weightclass(csv)
     cleanup_bodyweight(csv)
-    cleanup_equipment(csv)
     cleanup_sex(csv)
     cleanup_birthyear(csv)
     cleanup_tested(csv)
