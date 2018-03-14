@@ -168,7 +168,7 @@ def get_header_linenum(sheet):
 
         #Find name column
         for ii in range(len(sheet)):
-            if is_header(line):
+            if is_header(''.join(sheet[ii])):
                 return ii
     die("get_header_linenum() failed to find the header.")
 
@@ -411,20 +411,28 @@ def parse_sheet(sheet):
     assert not 'Event' in csv.fieldnames
     csv.fieldnames.append('Event')
 
+    csv.fieldnames.append('Amateur')
+
+
+
     #Equipment is sometimes given in columns, sometimes in sheet name
     if not 'Equipment' in csv.fieldnames:
         csv.fieldnames.append('Equipment')
         append_equip = True
 
-    csv.fieldnames.append('Amateur')
 
 
     if not 'Division' in csv.fieldnames:
         csv.fieldnames.append('Division')
         append_div = True
 
-    division = None
+    #Sex is sometimes given in columns, othertimes in headers
+    if not 'Sex' in csv.fieldnames:
+        csv.fieldnames.append('Sex')
+        append_sex = True
 
+    division = 'Open' #Sometimes division is just not given, default to Open
+    sex = None
 
 
     #See if division is above the header
@@ -440,8 +448,9 @@ def parse_sheet(sheet):
     for line in sheet[get_header_linenum(sheet)+1:]:
         text = ''.join(line)
         # Stop iteration once the 'Best Lifters' section is reached.
-        if 'Абсолютный' in text or 'List absolute winners' in text or text=='Мужчины' or 'Возрастная группа' in text or text=='Женщины':
+        if 'Абсолютный' in text or 'List absolute winners' in text or 'Возрастная группа' in text:
             break
+
         # Skip empty lines.
         if text == '':
             continue
@@ -454,6 +463,14 @@ def parse_sheet(sheet):
         if is_division(text):
             division = text
             continue
+
+        #Detect lines that set sex
+        if 'женщины' in text.lower():
+        	sex = 'F'
+        	continue
+        elif 'мужчины' in text.lower():
+        	sex = 'M'
+        	continue
 
         # If we've made it this far, the line should be for a lifter!
         # Make sure they have a name!
@@ -473,11 +490,17 @@ def parse_sheet(sheet):
             else:
                 line.append(obj['equipment'])
 
-        if append_div or (line[csv.index('Division')] == '' and division != None):
-            if not append_div:
-                line[csv.index('Division')] = division
-            else:
-                line.append(division)
+
+
+        if append_div:
+        	line.append(division)
+        else:
+            line[csv.index('Division')] = division
+                
+
+        if append_sex:
+        	line.append(sex)
+
 
 
         assert len(line) == len(csv.fieldnames)
@@ -722,7 +745,7 @@ def main(filename):
     # Since the input is comma-separated, store the file as a list of lists.
     with open(filename) as fd:
         lines = [x.strip().split(',') for x in fd.readlines()]
-
+    
     # Split the input filename into sheets, each of which is an independent CSV.
     sheetlist = split_by_sheet(lines)
 
