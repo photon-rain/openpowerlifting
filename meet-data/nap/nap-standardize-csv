@@ -168,10 +168,15 @@ def get_header_linenum(sheet):
 
         #Find name column
         for ii in range(len(sheet)):
-            if 'ФИО' in ''.join(sheet[ii]):
+            if is_header(line):
                 return ii
     die("get_header_linenum() failed to find the header.")
 
+
+def is_header(line):
+    if 'ФИО' in line:
+        return True
+    return False	
 
 
 # Header is two merged rows, recombine these back into one row here
@@ -388,7 +393,7 @@ def parse_sheet(sheet):
         return csv
 
 
-    # Figure out event, equipment, etc., and store in obj.
+    # Figure out everything we can from the sheet name
     obj = parse_sheetname(sheet[0][0].split(':')[1])
 
 
@@ -402,13 +407,18 @@ def parse_sheet(sheet):
     append_equip = False
     append_div = False
 
+
     assert not 'Event' in csv.fieldnames
     csv.fieldnames.append('Event')
+
+    #Equipment is sometimes given in columns, sometimes in sheet name
     if not 'Equipment' in csv.fieldnames:
         csv.fieldnames.append('Equipment')
         append_equip = True
 
     csv.fieldnames.append('Amateur')
+
+
     if not 'Division' in csv.fieldnames:
         csv.fieldnames.append('Division')
         append_div = True
@@ -435,7 +445,7 @@ def parse_sheet(sheet):
         # Skip empty lines.
         if text == '':
             continue
-        elif '№' in text: #Skip extra headers
+        elif is_header(text): #Skip extra headers
             continue
 
 
