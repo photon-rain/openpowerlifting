@@ -153,7 +153,6 @@ def parse_sheetname(s):
             pass
         else:
             die('Fix parse_sheetname(): Unknown word "%s" in "%s"' % (word, s))
-    assert event
 
     obj['event'] = event
     obj['amateur'] = amateur
@@ -174,7 +173,7 @@ def get_header_linenum(sheet):
 
 
 def is_header(line):
-    if 'ФИО' in line:
+    if 'ФИО' in line or 'фамилия и имя'in line:
         return True
     return False	
 
@@ -406,6 +405,7 @@ def parse_sheet(sheet):
 
     append_equip = False
     append_div = False
+    append_sex = False
 
 
     assert not 'Event' in csv.fieldnames
@@ -432,7 +432,7 @@ def parse_sheet(sheet):
         append_sex = True
 
     division = 'Open' #Sometimes division is just not given, default to Open
-    sex = None
+    sex = ''
 
 
     #See if division is above the header
@@ -500,6 +500,8 @@ def parse_sheet(sheet):
 
         if append_sex:
         	line.append(sex)
+        else:
+        	line[csv.index('Sex')]=sex
 
 
 
