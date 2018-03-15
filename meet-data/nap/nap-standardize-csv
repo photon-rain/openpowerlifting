@@ -405,6 +405,7 @@ def parse_sheet(sheet):
 
     append_equip = False
     append_div = False
+    append_sex = False
 
 
     assert not 'Event' in csv.fieldnames
