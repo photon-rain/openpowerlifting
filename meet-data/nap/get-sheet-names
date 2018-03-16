@@ -6,11 +6,14 @@ import sys
 
 def getSheetName(file_name):
     names = []
-    Workbook = xlrd.open_workbook(file_name, on_demand=True)
+    Workbook = xlrd.open_workbook(file_name)
     names = Workbook.sheet_names()
     
     for name in names:
-        print(name)
+    	sheet = Workbook.sheet_by_name(name)
+    	if sheet.nrows !=0:
+            print(name)
+
 
 
 
